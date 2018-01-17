@@ -1,0 +1,28 @@
+.movies-list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .collection-item {
+    width: 60vw;
+    display: flex;
+    .error-poster {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: center;
+      width: 245px;
+      text-align: center;
+    }
+    .description {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+    }
+  }
+}

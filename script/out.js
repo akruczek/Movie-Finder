@@ -772,6 +772,21 @@ module.exports = warning;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = __webpack_require__(40);
+} else {
+  module.exports = __webpack_require__(41);
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -835,7 +850,7 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -926,21 +941,6 @@ Col.propTypes = {
 };
 
 exports.default = Col;
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(40);
-} else {
-  module.exports = __webpack_require__(41);
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
 /* 15 */
@@ -1277,6 +1277,241 @@ module.exports = ReactPropTypesSecret;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.Toast = exports.Tag = exports.Tabs = exports.Table = exports.Tab = exports.Slider = exports.Slide = exports.SideNavItem = exports.SideNav = exports.Section = exports.SearchForm = exports.Row = exports.ProgressBar = exports.Preloader = exports.Parallax = exports.PaginationButton = exports.Pagination = exports.OverlayTrigger = exports.Overlay = exports.Navbar = exports.NavItem = exports.Modal = exports.MenuItem = exports.MediaBox = exports.Input = exports.Icon = exports.Footer = exports.Dropdown = exports.Divider = exports.Container = exports.CollectionItem = exports.Collection = exports.CollapsibleItem = exports.Collapsible = exports.Col = exports.Chip = exports.CardTitle = exports.CardPanel = exports.Card = exports.Carousel = exports.Button = exports.Breadcrumb = exports.Badge = exports.Autocomplete = undefined;
+
+var _Autocomplete = __webpack_require__(49);
+
+var _Autocomplete2 = _interopRequireDefault(_Autocomplete);
+
+var _Badge = __webpack_require__(54);
+
+var _Badge2 = _interopRequireDefault(_Badge);
+
+var _Breadcrumb = __webpack_require__(55);
+
+var _Breadcrumb2 = _interopRequireDefault(_Breadcrumb);
+
+var _Button = __webpack_require__(23);
+
+var _Button2 = _interopRequireDefault(_Button);
+
+var _Carousel = __webpack_require__(56);
+
+var _Carousel2 = _interopRequireDefault(_Carousel);
+
+var _Card = __webpack_require__(57);
+
+var _Card2 = _interopRequireDefault(_Card);
+
+var _CardPanel = __webpack_require__(58);
+
+var _CardPanel2 = _interopRequireDefault(_CardPanel);
+
+var _CardTitle = __webpack_require__(59);
+
+var _CardTitle2 = _interopRequireDefault(_CardTitle);
+
+var _Chip = __webpack_require__(27);
+
+var _Chip2 = _interopRequireDefault(_Chip);
+
+var _Col = __webpack_require__(14);
+
+var _Col2 = _interopRequireDefault(_Col);
+
+var _Collapsible = __webpack_require__(60);
+
+var _Collapsible2 = _interopRequireDefault(_Collapsible);
+
+var _CollapsibleItem = __webpack_require__(61);
+
+var _CollapsibleItem2 = _interopRequireDefault(_CollapsibleItem);
+
+var _Collection = __webpack_require__(62);
+
+var _Collection2 = _interopRequireDefault(_Collection);
+
+var _CollectionItem = __webpack_require__(63);
+
+var _CollectionItem2 = _interopRequireDefault(_CollectionItem);
+
+var _Container = __webpack_require__(64);
+
+var _Container2 = _interopRequireDefault(_Container);
+
+var _Divider = __webpack_require__(65);
+
+var _Divider2 = _interopRequireDefault(_Divider);
+
+var _Dropdown = __webpack_require__(66);
+
+var _Dropdown2 = _interopRequireDefault(_Dropdown);
+
+var _Footer = __webpack_require__(67);
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
+var _Icon = __webpack_require__(6);
+
+var _Icon2 = _interopRequireDefault(_Icon);
+
+var _Input = __webpack_require__(68);
+
+var _Input2 = _interopRequireDefault(_Input);
+
+var _MediaBox = __webpack_require__(69);
+
+var _MediaBox2 = _interopRequireDefault(_MediaBox);
+
+var _MenuItem = __webpack_require__(70);
+
+var _MenuItem2 = _interopRequireDefault(_MenuItem);
+
+var _Modal = __webpack_require__(71);
+
+var _Modal2 = _interopRequireDefault(_Modal);
+
+var _NavItem = __webpack_require__(75);
+
+var _NavItem2 = _interopRequireDefault(_NavItem);
+
+var _Navbar = __webpack_require__(76);
+
+var _Navbar2 = _interopRequireDefault(_Navbar);
+
+var _Overlay = __webpack_require__(29);
+
+var _Overlay2 = _interopRequireDefault(_Overlay);
+
+var _OverlayTrigger = __webpack_require__(28);
+
+var _OverlayTrigger2 = _interopRequireDefault(_OverlayTrigger);
+
+var _Pagination = __webpack_require__(77);
+
+var _Pagination2 = _interopRequireDefault(_Pagination);
+
+var _PaginationButton = __webpack_require__(30);
+
+var _PaginationButton2 = _interopRequireDefault(_PaginationButton);
+
+var _Parallax = __webpack_require__(78);
+
+var _Parallax2 = _interopRequireDefault(_Parallax);
+
+var _Preloader = __webpack_require__(79);
+
+var _Preloader2 = _interopRequireDefault(_Preloader);
+
+var _ProgressBar = __webpack_require__(81);
+
+var _ProgressBar2 = _interopRequireDefault(_ProgressBar);
+
+var _Row = __webpack_require__(24);
+
+var _Row2 = _interopRequireDefault(_Row);
+
+var _SearchForm = __webpack_require__(82);
+
+var _SearchForm2 = _interopRequireDefault(_SearchForm);
+
+var _Section = __webpack_require__(83);
+
+var _Section2 = _interopRequireDefault(_Section);
+
+var _SideNav = __webpack_require__(84);
+
+var _SideNav2 = _interopRequireDefault(_SideNav);
+
+var _SideNavItem = __webpack_require__(85);
+
+var _SideNavItem2 = _interopRequireDefault(_SideNavItem);
+
+var _Slide = __webpack_require__(87);
+
+var _Slide2 = _interopRequireDefault(_Slide);
+
+var _Slider = __webpack_require__(88);
+
+var _Slider2 = _interopRequireDefault(_Slider);
+
+var _Tab = __webpack_require__(89);
+
+var _Tab2 = _interopRequireDefault(_Tab);
+
+var _Table = __webpack_require__(90);
+
+var _Table2 = _interopRequireDefault(_Table);
+
+var _Tabs = __webpack_require__(91);
+
+var _Tabs2 = _interopRequireDefault(_Tabs);
+
+var _Tag = __webpack_require__(92);
+
+var _Tag2 = _interopRequireDefault(_Tag);
+
+var _Toast = __webpack_require__(93);
+
+var _Toast2 = _interopRequireDefault(_Toast);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.Autocomplete = _Autocomplete2.default;
+exports.Badge = _Badge2.default;
+exports.Breadcrumb = _Breadcrumb2.default;
+exports.Button = _Button2.default;
+exports.Carousel = _Carousel2.default;
+exports.Card = _Card2.default;
+exports.CardPanel = _CardPanel2.default;
+exports.CardTitle = _CardTitle2.default;
+exports.Chip = _Chip2.default;
+exports.Col = _Col2.default;
+exports.Collapsible = _Collapsible2.default;
+exports.CollapsibleItem = _CollapsibleItem2.default;
+exports.Collection = _Collection2.default;
+exports.CollectionItem = _CollectionItem2.default;
+exports.Container = _Container2.default;
+exports.Divider = _Divider2.default;
+exports.Dropdown = _Dropdown2.default;
+exports.Footer = _Footer2.default;
+exports.Icon = _Icon2.default;
+exports.Input = _Input2.default;
+exports.MediaBox = _MediaBox2.default;
+exports.MenuItem = _MenuItem2.default;
+exports.Modal = _Modal2.default;
+exports.NavItem = _NavItem2.default;
+exports.Navbar = _Navbar2.default;
+exports.Overlay = _Overlay2.default;
+exports.OverlayTrigger = _OverlayTrigger2.default;
+exports.Pagination = _Pagination2.default;
+exports.PaginationButton = _PaginationButton2.default;
+exports.Parallax = _Parallax2.default;
+exports.Preloader = _Preloader2.default;
+exports.ProgressBar = _ProgressBar2.default;
+exports.Row = _Row2.default;
+exports.SearchForm = _SearchForm2.default;
+exports.Section = _Section2.default;
+exports.SideNav = _SideNav2.default;
+exports.SideNavItem = _SideNavItem2.default;
+exports.Slide = _Slide2.default;
+exports.Slider = _Slider2.default;
+exports.Tab = _Tab2.default;
+exports.Table = _Table2.default;
+exports.Tabs = _Tabs2.default;
+exports.Tag = _Tag2.default;
+exports.Toast = _Toast2.default;
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -1466,7 +1701,7 @@ Button.defaultProps = {
 exports.default = Button;
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1517,7 +1752,7 @@ Row.propTypes = {
 exports.default = Row;
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1559,7 +1794,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1600,241 +1835,6 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-
-/***/ }),
-/* 26 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Toast = exports.Tag = exports.Tabs = exports.Table = exports.Tab = exports.Slider = exports.Slide = exports.SideNavItem = exports.SideNav = exports.Section = exports.SearchForm = exports.Row = exports.ProgressBar = exports.Preloader = exports.Parallax = exports.PaginationButton = exports.Pagination = exports.OverlayTrigger = exports.Overlay = exports.Navbar = exports.NavItem = exports.Modal = exports.MenuItem = exports.MediaBox = exports.Input = exports.Icon = exports.Footer = exports.Dropdown = exports.Divider = exports.Container = exports.CollectionItem = exports.Collection = exports.CollapsibleItem = exports.Collapsible = exports.Col = exports.Chip = exports.CardTitle = exports.CardPanel = exports.Card = exports.Carousel = exports.Button = exports.Breadcrumb = exports.Badge = exports.Autocomplete = undefined;
-
-var _Autocomplete = __webpack_require__(49);
-
-var _Autocomplete2 = _interopRequireDefault(_Autocomplete);
-
-var _Badge = __webpack_require__(54);
-
-var _Badge2 = _interopRequireDefault(_Badge);
-
-var _Breadcrumb = __webpack_require__(55);
-
-var _Breadcrumb2 = _interopRequireDefault(_Breadcrumb);
-
-var _Button = __webpack_require__(22);
-
-var _Button2 = _interopRequireDefault(_Button);
-
-var _Carousel = __webpack_require__(56);
-
-var _Carousel2 = _interopRequireDefault(_Carousel);
-
-var _Card = __webpack_require__(57);
-
-var _Card2 = _interopRequireDefault(_Card);
-
-var _CardPanel = __webpack_require__(58);
-
-var _CardPanel2 = _interopRequireDefault(_CardPanel);
-
-var _CardTitle = __webpack_require__(59);
-
-var _CardTitle2 = _interopRequireDefault(_CardTitle);
-
-var _Chip = __webpack_require__(27);
-
-var _Chip2 = _interopRequireDefault(_Chip);
-
-var _Col = __webpack_require__(13);
-
-var _Col2 = _interopRequireDefault(_Col);
-
-var _Collapsible = __webpack_require__(60);
-
-var _Collapsible2 = _interopRequireDefault(_Collapsible);
-
-var _CollapsibleItem = __webpack_require__(61);
-
-var _CollapsibleItem2 = _interopRequireDefault(_CollapsibleItem);
-
-var _Collection = __webpack_require__(62);
-
-var _Collection2 = _interopRequireDefault(_Collection);
-
-var _CollectionItem = __webpack_require__(63);
-
-var _CollectionItem2 = _interopRequireDefault(_CollectionItem);
-
-var _Container = __webpack_require__(64);
-
-var _Container2 = _interopRequireDefault(_Container);
-
-var _Divider = __webpack_require__(65);
-
-var _Divider2 = _interopRequireDefault(_Divider);
-
-var _Dropdown = __webpack_require__(66);
-
-var _Dropdown2 = _interopRequireDefault(_Dropdown);
-
-var _Footer = __webpack_require__(67);
-
-var _Footer2 = _interopRequireDefault(_Footer);
-
-var _Icon = __webpack_require__(6);
-
-var _Icon2 = _interopRequireDefault(_Icon);
-
-var _Input = __webpack_require__(68);
-
-var _Input2 = _interopRequireDefault(_Input);
-
-var _MediaBox = __webpack_require__(69);
-
-var _MediaBox2 = _interopRequireDefault(_MediaBox);
-
-var _MenuItem = __webpack_require__(70);
-
-var _MenuItem2 = _interopRequireDefault(_MenuItem);
-
-var _Modal = __webpack_require__(71);
-
-var _Modal2 = _interopRequireDefault(_Modal);
-
-var _NavItem = __webpack_require__(75);
-
-var _NavItem2 = _interopRequireDefault(_NavItem);
-
-var _Navbar = __webpack_require__(76);
-
-var _Navbar2 = _interopRequireDefault(_Navbar);
-
-var _Overlay = __webpack_require__(29);
-
-var _Overlay2 = _interopRequireDefault(_Overlay);
-
-var _OverlayTrigger = __webpack_require__(28);
-
-var _OverlayTrigger2 = _interopRequireDefault(_OverlayTrigger);
-
-var _Pagination = __webpack_require__(77);
-
-var _Pagination2 = _interopRequireDefault(_Pagination);
-
-var _PaginationButton = __webpack_require__(30);
-
-var _PaginationButton2 = _interopRequireDefault(_PaginationButton);
-
-var _Parallax = __webpack_require__(78);
-
-var _Parallax2 = _interopRequireDefault(_Parallax);
-
-var _Preloader = __webpack_require__(79);
-
-var _Preloader2 = _interopRequireDefault(_Preloader);
-
-var _ProgressBar = __webpack_require__(81);
-
-var _ProgressBar2 = _interopRequireDefault(_ProgressBar);
-
-var _Row = __webpack_require__(23);
-
-var _Row2 = _interopRequireDefault(_Row);
-
-var _SearchForm = __webpack_require__(82);
-
-var _SearchForm2 = _interopRequireDefault(_SearchForm);
-
-var _Section = __webpack_require__(83);
-
-var _Section2 = _interopRequireDefault(_Section);
-
-var _SideNav = __webpack_require__(84);
-
-var _SideNav2 = _interopRequireDefault(_SideNav);
-
-var _SideNavItem = __webpack_require__(85);
-
-var _SideNavItem2 = _interopRequireDefault(_SideNavItem);
-
-var _Slide = __webpack_require__(87);
-
-var _Slide2 = _interopRequireDefault(_Slide);
-
-var _Slider = __webpack_require__(88);
-
-var _Slider2 = _interopRequireDefault(_Slider);
-
-var _Tab = __webpack_require__(89);
-
-var _Tab2 = _interopRequireDefault(_Tab);
-
-var _Table = __webpack_require__(90);
-
-var _Table2 = _interopRequireDefault(_Table);
-
-var _Tabs = __webpack_require__(91);
-
-var _Tabs2 = _interopRequireDefault(_Tabs);
-
-var _Tag = __webpack_require__(92);
-
-var _Tag2 = _interopRequireDefault(_Tag);
-
-var _Toast = __webpack_require__(93);
-
-var _Toast2 = _interopRequireDefault(_Toast);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.Autocomplete = _Autocomplete2.default;
-exports.Badge = _Badge2.default;
-exports.Breadcrumb = _Breadcrumb2.default;
-exports.Button = _Button2.default;
-exports.Carousel = _Carousel2.default;
-exports.Card = _Card2.default;
-exports.CardPanel = _CardPanel2.default;
-exports.CardTitle = _CardTitle2.default;
-exports.Chip = _Chip2.default;
-exports.Col = _Col2.default;
-exports.Collapsible = _Collapsible2.default;
-exports.CollapsibleItem = _CollapsibleItem2.default;
-exports.Collection = _Collection2.default;
-exports.CollectionItem = _CollectionItem2.default;
-exports.Container = _Container2.default;
-exports.Divider = _Divider2.default;
-exports.Dropdown = _Dropdown2.default;
-exports.Footer = _Footer2.default;
-exports.Icon = _Icon2.default;
-exports.Input = _Input2.default;
-exports.MediaBox = _MediaBox2.default;
-exports.MenuItem = _MenuItem2.default;
-exports.Modal = _Modal2.default;
-exports.NavItem = _NavItem2.default;
-exports.Navbar = _Navbar2.default;
-exports.Overlay = _Overlay2.default;
-exports.OverlayTrigger = _OverlayTrigger2.default;
-exports.Pagination = _Pagination2.default;
-exports.PaginationButton = _PaginationButton2.default;
-exports.Parallax = _Parallax2.default;
-exports.Preloader = _Preloader2.default;
-exports.ProgressBar = _ProgressBar2.default;
-exports.Row = _Row2.default;
-exports.SearchForm = _SearchForm2.default;
-exports.Section = _Section2.default;
-exports.SideNav = _SideNav2.default;
-exports.SideNavItem = _SideNavItem2.default;
-exports.Slide = _Slide2.default;
-exports.Slider = _Slider2.default;
-exports.Tab = _Tab2.default;
-exports.Table = _Table2.default;
-exports.Tabs = _Tabs2.default;
-exports.Tag = _Tag2.default;
-exports.Toast = _Toast2.default;
 
 /***/ }),
 /* 27 */
@@ -2216,12 +2216,28 @@ var languages = exports.languages = [{
   id: 0,
   langCode: "en",
   langName: "English",
-  search: "search"
+  search: "search",
+  search_movies: "search movies...",
+  Rating: "Rating",
+  Based_on: "Based on",
+  voices: "voices",
+  Popularity: "Popularity",
+  Release_date: "Release date",
+  y: "y.",
+  Unable_to_load_poster: "Unable to load poster"
 }, {
   id: 1,
   langCode: "pl",
   langName: "Polski",
-  search: "szukaj"
+  search: "szukaj",
+  search_movies: "szukaj filmów...",
+  Rating: "Ocena",
+  Based_on: "Na podstawie",
+  voices: "głosów",
+  Popularity: "Popularność",
+  Release_date: "Data publikacji",
+  y: "r.",
+  Unable_to_load_poster: "Nie można załadować okładki"
 }];
 
 /***/ }),
@@ -2710,7 +2726,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 __webpack_require__(35);
 
-var _react = __webpack_require__(14);
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -2718,9 +2734,11 @@ var _reactDom = __webpack_require__(42);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactMaterialize = __webpack_require__(26);
+var _reactMaterialize = __webpack_require__(22);
 
 var _SearchBar = __webpack_require__(94);
+
+var _MoviesList = __webpack_require__(95);
 
 var _text = __webpack_require__(31);
 
@@ -2750,17 +2768,15 @@ var Main = function (_React$Component) {
       _this.state.searchInput.split(" ").map(function (item) {
         return searchWords.push(item);
       });
-      console.log(searchWords);
       for (var i = 0; i < searchWords.length; i++) {
         searchString += searchWords[i];
         if (i !== searchWords.length - 1) searchString += "+";
       }
-      console.log(searchString);
 
       fetch("https://api.themoviedb.org/3/search/movie?api_key=73a3e42b7075df257f789c920cc37996&query=" + searchString + "&language=" + _this.state.text.langCode).then(function (response) {
         return response && response.ok ? response.json() : "Błąd Połączenia";
       }).then(function (data) {
-        console.log(data.results);
+        return _this.setState({ searchResult: data.results }, console.log(data.results));
       }).catch(function (error) {
         return console.log(error);
       });
@@ -2776,16 +2792,18 @@ var Main = function (_React$Component) {
 
       event.preventDefault();
       _this.setState((_this$setState = {}, _defineProperty(_this$setState, event.target.name, event.target.value), _defineProperty(_this$setState, "text", _text.languages[event.target.value]), _this$setState));
+      _this.state.searchResult !== null && _this.getMovies();
     };
 
     _this.changeHandler = function (event) {
-      _this.setState(_defineProperty({}, event.target.name, event.target.value));
+      return _this.setState(_defineProperty({}, event.target.name, event.target.value));
     };
 
     _this.state = {
       langId: 0,
       text: _text.languages[0],
-      searchInput: ""
+      searchInput: "",
+      searchResult: null
     };
     return _this;
   }
@@ -2797,7 +2815,8 @@ var Main = function (_React$Component) {
         "div",
         null,
         _react2.default.createElement(_SearchBar.SearchBar, { text: this.state.text, changeLanguage: this.changeLanguage, langId: this.state.langId,
-          searchMovies: this.searchMovies, searchInput: this.state.searchInput, changeHandler: this.changeHandler })
+          searchMovies: this.searchMovies, searchInput: this.state.searchInput, changeHandler: this.changeHandler }),
+        _react2.default.createElement(_MoviesList.MoviesList, { searchResult: this.state.searchResult, text: this.state.text })
       );
     }
   }]);
@@ -2852,7 +2871,7 @@ exports = module.exports = __webpack_require__(37)(false);
 
 
 // module
-exports.push([module.i, "html .search-bar {\n  display: flex;\n  height: 100px;\n  width: 100vw; }\n  html .search-bar ul {\n    align-items: center; }\n    html .search-bar ul i {\n      font-size: 48px; }\n    html .search-bar ul li a {\n      font-size: 24px;\n      font-weight: 600;\n      padding-top: 15px;\n      margin-right: 10px;\n      height: 100px; }\n    html .search-bar ul .search-input {\n      padding-top: 10px;\n      font-size: 24px;\n      font-weight: 600;\n      height: 40px;\n      width: 30%; }\n    html .search-bar ul .search-button {\n      margin-left: 10px;\n      margin-bottom: 15px;\n      font-size: 18px;\n      font-weight: 600; }\n    html .search-bar ul .language-select {\n      position: absolute;\n      right: 0;\n      width: 10%;\n      padding-top: 15px; }\n      html .search-bar ul .language-select .caret {\n        color: white;\n        margin-right: 15px; }\n      html .search-bar ul .language-select .select-dropdown {\n        border: 0;\n        font-size: 20px;\n        font-weight: 500; }\n", ""]);
+exports.push([module.i, "html .search-bar {\n  display: flex;\n  height: 100px;\n  width: 100vw; }\n  html .search-bar ul {\n    align-items: center; }\n    html .search-bar ul i {\n      font-size: 48px; }\n    html .search-bar ul li a {\n      font-size: 24px;\n      font-weight: 600;\n      padding-top: 15px;\n      margin-right: 10px;\n      height: 100px; }\n    html .search-bar ul .search-input {\n      padding-top: 10px;\n      font-size: 24px;\n      font-weight: 600;\n      height: 40px;\n      width: 30%; }\n    html .search-bar ul .search-button {\n      margin-left: 10px;\n      margin-bottom: 15px;\n      font-size: 18px;\n      font-weight: 600; }\n    html .search-bar ul .language-select {\n      position: absolute;\n      right: 0;\n      width: 10%;\n      padding-top: 15px; }\n      html .search-bar ul .language-select .caret {\n        color: white;\n        margin-right: 45px; }\n      html .search-bar ul .language-select .select-dropdown {\n        border: 0;\n        font-size: 20px;\n        font-weight: 500; }\n\nhtml .movies-list {\n  margin-top: 50px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n  html .movies-list .collection-item {\n    width: 60vw;\n    display: flex; }\n    html .movies-list .collection-item .error-poster {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      align-self: center;\n      width: 245px;\n      text-align: center; }\n    html .movies-list .collection-item .description {\n      width: 100%;\n      height: 300px;\n      display: flex;\n      flex-direction: column;\n      align-self: center;\n      align-items: center;\n      align-content: center;\n      text-align: center; }\n", ""]);
 
 // exports
 
@@ -3461,7 +3480,7 @@ var emptyObject = __webpack_require__(7);
 var invariant = __webpack_require__(9);
 var warning = __webpack_require__(11);
 var emptyFunction = __webpack_require__(4);
-var checkPropTypes = __webpack_require__(12);
+var checkPropTypes = __webpack_require__(13);
 
 // TODO: this is special because it gets imported during build.
 
@@ -4862,7 +4881,7 @@ if (process.env.NODE_ENV === 'production') {
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(14),l=__webpack_require__(15),B=__webpack_require__(5),C=__webpack_require__(4),ba=__webpack_require__(16),da=__webpack_require__(17),ea=__webpack_require__(18),fa=__webpack_require__(19),ia=__webpack_require__(20),D=__webpack_require__(7);
+var aa=__webpack_require__(12),l=__webpack_require__(15),B=__webpack_require__(5),C=__webpack_require__(4),ba=__webpack_require__(16),da=__webpack_require__(17),ea=__webpack_require__(18),fa=__webpack_require__(19),ia=__webpack_require__(20),D=__webpack_require__(7);
 function E(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:E("227");
 var oa={children:!0,dangerouslySetInnerHTML:!0,defaultValue:!0,defaultChecked:!0,innerHTML:!0,suppressContentEditableWarning:!0,suppressHydrationWarning:!0,style:!0};function pa(a,b){return(a&b)===b}
 var ta={MUST_USE_PROPERTY:1,HAS_BOOLEAN_VALUE:4,HAS_NUMERIC_VALUE:8,HAS_POSITIVE_NUMERIC_VALUE:24,HAS_OVERLOADED_BOOLEAN_VALUE:32,HAS_STRING_BOOLEAN_VALUE:64,injectDOMPropertyConfig:function(a){var b=ta,c=a.Properties||{},d=a.DOMAttributeNamespaces||{},e=a.DOMAttributeNames||{};a=a.DOMMutationMethods||{};for(var f in c){ua.hasOwnProperty(f)?E("48",f):void 0;var g=f.toLowerCase(),h=c[f];g={attributeName:g,attributeNamespace:null,propertyName:f,mutationMethod:null,mustUseProperty:pa(h,b.MUST_USE_PROPERTY),
@@ -5159,7 +5178,7 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var React = __webpack_require__(14);
+var React = __webpack_require__(12);
 var invariant = __webpack_require__(9);
 var warning = __webpack_require__(11);
 var ExecutionEnvironment = __webpack_require__(15);
@@ -5171,9 +5190,9 @@ var shallowEqual = __webpack_require__(18);
 var containsNode = __webpack_require__(19);
 var focusNode = __webpack_require__(20);
 var emptyObject = __webpack_require__(7);
-var checkPropTypes = __webpack_require__(12);
-var hyphenateStyleName = __webpack_require__(24);
-var camelizeStyleName = __webpack_require__(25);
+var checkPropTypes = __webpack_require__(13);
+var hyphenateStyleName = __webpack_require__(25);
+var camelizeStyleName = __webpack_require__(26);
 
 /**
  * WARNING: DO NOT manually require this module.
@@ -20936,7 +20955,7 @@ var emptyObject = __webpack_require__(7);
 var invariant = __webpack_require__(9);
 var warning = __webpack_require__(11);
 var emptyFunction = __webpack_require__(4);
-var checkPropTypes = __webpack_require__(12);
+var checkPropTypes = __webpack_require__(13);
 
 // TODO: this is special because it gets imported during build.
 
@@ -22294,7 +22313,7 @@ var warning = __webpack_require__(11);
 var assign = __webpack_require__(5);
 
 var ReactPropTypesSecret = __webpack_require__(21);
-var checkPropTypes = __webpack_require__(12);
+var checkPropTypes = __webpack_require__(13);
 
 module.exports = function(isValidElement, throwOnDirectAccess) {
   /* global Symbol */
@@ -22966,7 +22985,7 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Col = __webpack_require__(13);
+var _Col = __webpack_require__(14);
 
 var _Col2 = _interopRequireDefault(_Col);
 
@@ -24106,11 +24125,11 @@ var _classnames = __webpack_require__(2);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _Row = __webpack_require__(23);
+var _Row = __webpack_require__(24);
 
 var _Row2 = _interopRequireDefault(_Row);
 
-var _Col = __webpack_require__(13);
+var _Col = __webpack_require__(14);
 
 var _Col2 = _interopRequireDefault(_Col);
 
@@ -24798,7 +24817,7 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Button = __webpack_require__(22);
+var _Button = __webpack_require__(23);
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -25311,9 +25330,9 @@ var shallowEqual = __webpack_require__(18);
 var containsNode = __webpack_require__(19);
 var focusNode = __webpack_require__(20);
 var emptyObject = __webpack_require__(7);
-var checkPropTypes = __webpack_require__(12);
-var hyphenateStyleName = __webpack_require__(24);
-var camelizeStyleName = __webpack_require__(25);
+var checkPropTypes = __webpack_require__(13);
+var hyphenateStyleName = __webpack_require__(25);
+var camelizeStyleName = __webpack_require__(26);
 
 /**
  * WARNING: DO NOT manually require this module.
@@ -40759,7 +40778,7 @@ var _classnames = __webpack_require__(2);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _Col = __webpack_require__(13);
+var _Col = __webpack_require__(14);
 
 var _Col2 = _interopRequireDefault(_Col);
 
@@ -42289,11 +42308,11 @@ var _classnames = __webpack_require__(2);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _Row = __webpack_require__(23);
+var _Row = __webpack_require__(24);
 
 var _Row2 = _interopRequireDefault(_Row);
 
-var _Col = __webpack_require__(13);
+var _Col = __webpack_require__(14);
 
 var _Col2 = _interopRequireDefault(_Col);
 
@@ -42485,7 +42504,7 @@ var _classnames = __webpack_require__(2);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _Button = __webpack_require__(22);
+var _Button = __webpack_require__(23);
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -42554,11 +42573,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.SearchBar = undefined;
 
-var _react = __webpack_require__(14);
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactMaterialize = __webpack_require__(26);
+var _reactMaterialize = __webpack_require__(22);
 
 var _text = __webpack_require__(31);
 
@@ -42578,7 +42597,7 @@ var SearchBar = exports.SearchBar = function SearchBar(props) {
       )
     ),
     _react2.default.createElement("input", { className: "search-input", name: "searchInput", value: props.searchInput, onChange: props.changeHandler,
-      placeholder: "search movies..." }),
+      placeholder: props.text.search_movies }),
     _react2.default.createElement(
       _reactMaterialize.Button,
       { className: "search-button", onClick: props.searchMovies },
@@ -42598,6 +42617,94 @@ var SearchBar = exports.SearchBar = function SearchBar(props) {
           );
         })
       )
+    )
+  );
+};
+
+/***/ }),
+/* 95 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.MoviesList = undefined;
+
+var _react = __webpack_require__(12);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactMaterialize = __webpack_require__(22);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var MoviesList = exports.MoviesList = function MoviesList(props) {
+  return props.searchResult !== null && _react2.default.createElement(
+    "div",
+    { className: "movies-list" },
+    _react2.default.createElement(
+      _reactMaterialize.Collection,
+      null,
+      props.searchResult.map(function (item) {
+        return _react2.default.createElement(
+          _reactMaterialize.CollectionItem,
+          { key: item.id, className: "collection-item" },
+          item.poster_path !== null ? _react2.default.createElement("img", { src: "https://image.tmdb.org/t/p/w185/" + item.poster_path }) : _react2.default.createElement(
+            "div",
+            { className: "error-poster" },
+            props.text.Unable_to_load_poster
+          ),
+          _react2.default.createElement(
+            "div",
+            { className: "description" },
+            _react2.default.createElement(
+              "h4",
+              null,
+              item.title
+            ),
+            _react2.default.createElement(
+              "h5",
+              null,
+              props.text.Release_date,
+              ": ",
+              item.release_date.split("-").reverse().map(function (dateItem, index) {
+                return index !== 2 ? dateItem + "-" : dateItem + props.text.y;
+              })
+            ),
+            _react2.default.createElement(
+              "h5",
+              null,
+              props.text.Popularity,
+              ": ",
+              item.popularity.toFixed(2)
+            ),
+            _react2.default.createElement(
+              "h5",
+              null,
+              props.text.Rating,
+              ": ",
+              item.vote_average,
+              "/10"
+            ),
+            _react2.default.createElement(
+              "h6",
+              null,
+              props.text.Based_on,
+              " ",
+              _react2.default.createElement(
+                "strong",
+                null,
+                item.vote_count
+              ),
+              " ",
+              props.text.voices
+            )
+          )
+        );
+      })
     )
   );
 };
