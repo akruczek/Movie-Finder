@@ -1,0 +1,23 @@
+.search-bar {
+  display: flex;
+  height: 100px;
+  ul {
+    align-items: center;
+    i { font-size: 48px; }
+    li {
+      a {
+        font-size: 24px;
+        font-weight: 600;
+        padding-top: 15px;
+        margin-right: 10px;
+        height: 100px;
+      }
+    }
+    input {
+      padding-top: 10px;
+      font-size: 24px;
+      font-weight: 600;
+      height: 40px;
+    }
+  }
+}
