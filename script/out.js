@@ -2224,7 +2224,12 @@ var languages = exports.languages = [{
   Popularity: "Popularity",
   Release_date: "Release date",
   y: "y.",
-  Unable_to_load_poster: "Unable to load poster"
+  Unable_to_load_poster: "Unable to load poster",
+  more_details: "more details",
+  Category: "Categories",
+  Production_countries: "Production countries",
+  Production_companies: "Production companies",
+  No_results: "No results :("
 }, {
   id: 1,
   langCode: "pl",
@@ -2237,7 +2242,12 @@ var languages = exports.languages = [{
   Popularity: "Popularność",
   Release_date: "Data publikacji",
   y: "r.",
-  Unable_to_load_poster: "Nie można załadować okładki"
+  Unable_to_load_poster: "Nie można załadować okładki",
+  more_details: "więcej szczegółów",
+  Category: "Kategorie",
+  Production_countries: "Kraje Produkcji",
+  Production_companies: "Firmy Produkcyjne",
+  No_results: "Brak wyników :("
 }];
 
 /***/ }),
@@ -2776,7 +2786,10 @@ var Main = function (_React$Component) {
       fetch("https://api.themoviedb.org/3/search/movie?api_key=73a3e42b7075df257f789c920cc37996&query=" + searchString + "&language=" + _this.state.text.langCode).then(function (response) {
         return response && response.ok ? response.json() : "Błąd Połączenia";
       }).then(function (data) {
-        return _this.setState({ searchResult: data.results }, console.log(data.results));
+        return _this.setState({
+          searchResult: data.results,
+          sortedAlpha: false
+        });
       }).catch(function (error) {
         return console.log(error);
       });
@@ -2795,6 +2808,35 @@ var Main = function (_React$Component) {
       _this.state.searchResult !== null && _this.getMovies();
     };
 
+    _this.catchMovieDetails = function (id, index) {
+      fetch("https://api.themoviedb.org/3/movie/" + id + "?api_key=73a3e42b7075df257f789c920cc37996").then(function (response) {
+        return response && response.ok ? response.json() : "Błąd Połączenia";
+      }).then(function (data) {
+        var searchResult = _this.state.searchResult;
+        searchResult[index].genres = data.genres;
+        searchResult[index].imdb_link = "http://www.imdb.com/title/" + data.imdb_id + "/mediaviewer/rm1804016896";
+        searchResult[index].production_countries = data.production_countries;
+        searchResult[index].production_companies = data.production_companies;
+        _this.setState({ searchResult: searchResult });
+      }).catch(function (error) {
+        return console.log(error);
+      });
+    };
+
+    _this.sortMovies = function (event) {
+      event.preventDefault();
+      var searchResult = _this.state.searchResult.sort(function (a, b) {
+        if (_this.state.sortedAlpha) b = [a, a = b][0];
+        if (a.title < b.title) return -1;
+        if (b.title < a.title) return 1;
+        return 0;
+      });
+      _this.setState({
+        searchResult: searchResult,
+        sortedAlpha: !_this.state.sortedAlpha
+      });
+    };
+
     _this.changeHandler = function (event) {
       return _this.setState(_defineProperty({}, event.target.name, event.target.value));
     };
@@ -2803,7 +2845,8 @@ var Main = function (_React$Component) {
       langId: 0,
       text: _text.languages[0],
       searchInput: "",
-      searchResult: null
+      searchResult: null,
+      sortedAlpha: false
     };
     return _this;
   }
@@ -2815,8 +2858,9 @@ var Main = function (_React$Component) {
         "div",
         null,
         _react2.default.createElement(_SearchBar.SearchBar, { text: this.state.text, changeLanguage: this.changeLanguage, langId: this.state.langId,
-          searchMovies: this.searchMovies, searchInput: this.state.searchInput, changeHandler: this.changeHandler }),
-        _react2.default.createElement(_MoviesList.MoviesList, { searchResult: this.state.searchResult, text: this.state.text })
+          searchMovies: this.searchMovies, searchInput: this.state.searchInput, changeHandler: this.changeHandler,
+          sortMovies: this.sortMovies }),
+        _react2.default.createElement(_MoviesList.MoviesList, { searchResult: this.state.searchResult, text: this.state.text, catchMovieDetails: this.catchMovieDetails })
       );
     }
   }]);
@@ -2871,7 +2915,7 @@ exports = module.exports = __webpack_require__(37)(false);
 
 
 // module
-exports.push([module.i, "html .search-bar {\n  display: flex;\n  height: 100px;\n  width: 100vw; }\n  html .search-bar ul {\n    align-items: center; }\n    html .search-bar ul i {\n      font-size: 48px; }\n    html .search-bar ul li a {\n      font-size: 24px;\n      font-weight: 600;\n      padding-top: 15px;\n      margin-right: 10px;\n      height: 100px; }\n    html .search-bar ul .search-input {\n      padding-top: 10px;\n      font-size: 24px;\n      font-weight: 600;\n      height: 40px;\n      width: 30%; }\n    html .search-bar ul .search-button {\n      margin-left: 10px;\n      margin-bottom: 15px;\n      font-size: 18px;\n      font-weight: 600; }\n    html .search-bar ul .language-select {\n      position: absolute;\n      right: 0;\n      width: 10%;\n      padding-top: 15px; }\n      html .search-bar ul .language-select .caret {\n        color: white;\n        margin-right: 45px; }\n      html .search-bar ul .language-select .select-dropdown {\n        border: 0;\n        font-size: 20px;\n        font-weight: 500; }\n\nhtml .movies-list {\n  margin-top: 50px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n  html .movies-list .collection-item {\n    width: 60vw;\n    display: flex; }\n    html .movies-list .collection-item .error-poster {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      align-self: center;\n      width: 245px;\n      text-align: center; }\n    html .movies-list .collection-item .description {\n      width: 100%;\n      height: 300px;\n      display: flex;\n      flex-direction: column;\n      align-self: center;\n      align-items: center;\n      align-content: center;\n      text-align: center; }\n", ""]);
+exports.push([module.i, "html .search-bar {\n  display: flex;\n  height: 100px;\n  width: 100vw; }\n  html .search-bar ul {\n    align-items: center; }\n    html .search-bar ul i {\n      font-size: 48px; }\n    html .search-bar ul li a {\n      font-size: 24px;\n      font-weight: 600;\n      padding-top: 15px;\n      margin-right: 10px;\n      height: 100px; }\n    html .search-bar ul .search-input {\n      padding-top: 10px;\n      font-size: 24px;\n      font-weight: 600;\n      height: 40px;\n      width: 30%; }\n    html .search-bar ul .search-button {\n      margin-left: 10px;\n      margin-bottom: 15px;\n      font-size: 18px;\n      font-weight: 600; }\n    html .search-bar ul .language-select {\n      position: absolute;\n      right: 20px;\n      width: 10%;\n      padding-top: 15px; }\n      html .search-bar ul .language-select div {\n        padding-left: 15px; }\n      html .search-bar ul .language-select .caret {\n        color: white;\n        left: 0; }\n      html .search-bar ul .language-select .select-dropdown {\n        border: 0;\n        font-size: 20px;\n        font-weight: 500; }\n\nhtml .movies-list {\n  margin-top: 50px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n  html .movies-list .collection-item {\n    width: 60vw;\n    display: flex; }\n    html .movies-list .collection-item img {\n      height: 280px;\n      margin-right: 5px;\n      align-self: center; }\n    html .movies-list .collection-item .error-poster {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      align-self: center;\n      width: 245px;\n      text-align: center; }\n    html .movies-list .collection-item .description {\n      width: 100%;\n      display: flex;\n      flex-direction: column;\n      align-self: center;\n      align-items: center;\n      align-content: center;\n      text-align: center; }\n      html .movies-list .collection-item .description span {\n        margin-top: 10px;\n        text-decoration: underline;\n        cursor: pointer; }\n      html .movies-list .collection-item .description .details ul {\n        display: inline; }\n      html .movies-list .collection-item .description .details li {\n        display: inline; }\n\nhtml .empty {\n  color: grey;\n  text-align: center;\n  margin-top: 100px; }\n", ""]);
 
 // exports
 
@@ -42589,7 +42633,7 @@ var SearchBar = exports.SearchBar = function SearchBar(props) {
     { fixed: true, className: "search-bar orange darken-2" },
     _react2.default.createElement(
       _reactMaterialize.NavItem,
-      null,
+      { onClick: props.sortMovies },
       _react2.default.createElement(
         _reactMaterialize.Icon,
         { large: true },
@@ -42642,13 +42686,13 @@ var _reactMaterialize = __webpack_require__(22);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var MoviesList = exports.MoviesList = function MoviesList(props) {
-  return props.searchResult !== null && _react2.default.createElement(
+  return props.searchResult !== null ? props.searchResult.length > 0 ? _react2.default.createElement(
     "div",
     { className: "movies-list" },
     _react2.default.createElement(
       _reactMaterialize.Collection,
       null,
-      props.searchResult.map(function (item) {
+      props.searchResult.map(function (item, index) {
         return _react2.default.createElement(
           _reactMaterialize.CollectionItem,
           { key: item.id, className: "collection-item" },
@@ -42701,12 +42745,106 @@ var MoviesList = exports.MoviesList = function MoviesList(props) {
               ),
               " ",
               props.text.voices
+            ),
+            _react2.default.createElement(
+              "span",
+              { onClick: function onClick() {
+                  return props.catchMovieDetails(item.id, index);
+                } },
+              props.text.more_details,
+              "\u21B4"
+            ),
+            item.genres !== undefined && _react2.default.createElement(
+              "section",
+              { className: "details" },
+              _react2.default.createElement(
+                "p",
+                { className: "overview" },
+                item.overview
+              ),
+              _react2.default.createElement(
+                "h6",
+                null,
+                props.text.Category,
+                ": ",
+                _react2.default.createElement(
+                  "ul",
+                  null,
+                  item.genres.map(function (genre, index) {
+                    return _react2.default.createElement(
+                      "li",
+                      { key: genre.id },
+                      _react2.default.createElement(
+                        "strong",
+                        null,
+                        index === 0 ? genre.name : ", " + genre.name
+                      )
+                    );
+                  })
+                )
+              ),
+              _react2.default.createElement(
+                "h6",
+                null,
+                props.text.Production_countries,
+                ": ",
+                _react2.default.createElement(
+                  "ul",
+                  null,
+                  item.production_countries.map(function (country, index) {
+                    return _react2.default.createElement(
+                      "li",
+                      { key: country.iso_3166_1 },
+                      _react2.default.createElement(
+                        "strong",
+                        null,
+                        index === 0 ? country.name : ", " + country.name
+                      )
+                    );
+                  })
+                )
+              ),
+              _react2.default.createElement(
+                "h6",
+                null,
+                props.text.Production_companies,
+                ": ",
+                _react2.default.createElement(
+                  "ul",
+                  null,
+                  item.production_companies.map(function (company, index) {
+                    return _react2.default.createElement(
+                      "li",
+                      { key: company.id },
+                      _react2.default.createElement(
+                        "strong",
+                        null,
+                        index === 0 ? company.name : ", " + company.name
+                      )
+                    );
+                  })
+                )
+              ),
+              _react2.default.createElement(
+                "h6",
+                null,
+                "IMDB: ",
+                _react2.default.createElement(
+                  "a",
+                  { href: item.imdb_link },
+                  item.imdb_link.split("//")[1]
+                )
+              )
             )
           )
         );
       })
     )
-  );
+  ) : _react2.default.createElement(
+    "h1",
+    { className: "empty" },
+    props.text.No_results
+  ) : "";
 };
 
 /***/ })

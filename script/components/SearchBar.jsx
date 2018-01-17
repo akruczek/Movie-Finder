@@ -5,7 +5,7 @@ import {languages} from "./../variables/text.jsx";
 export const SearchBar =(props)=> {
   return (
     <Navbar fixed className="search-bar orange darken-2">
-      <NavItem><Icon large>sort_by_alpha</Icon></NavItem>
+      <NavItem onClick={props.sortMovies}><Icon large>sort_by_alpha</Icon></NavItem>
       <input className="search-input" name="searchInput" value={props.searchInput} onChange={props.changeHandler}
         placeholder={props.text.search_movies} />
       <Button className="search-button" onClick={props.searchMovies}>{props.text.search}</Button>

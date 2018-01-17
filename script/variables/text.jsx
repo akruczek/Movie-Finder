@@ -11,7 +11,12 @@ export const languages = [
     Popularity: "Popularity",
     Release_date: "Release date",
     y: "y.",
-    Unable_to_load_poster: "Unable to load poster"
+    Unable_to_load_poster: "Unable to load poster",
+    more_details: "more details",
+    Category: "Categories",
+    Production_countries: "Production countries",
+    Production_companies: "Production companies",
+    No_results: "No results :("
   },
 
   {
@@ -26,6 +31,11 @@ export const languages = [
     Popularity: "Popularność",
     Release_date: "Data publikacji",
     y: "r.",
-    Unable_to_load_poster: "Nie można załadować okładki"
+    Unable_to_load_poster: "Nie można załadować okładki",
+    more_details: "więcej szczegółów",
+    Category: "Kategorie",
+    Production_countries: "Kraje Produkcji",
+    Production_companies: "Firmy Produkcyjne",
+    No_results: "Brak wyników :("
   }
 ]

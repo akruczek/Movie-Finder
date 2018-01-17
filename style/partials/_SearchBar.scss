@@ -11,33 +11,26 @@
         font-weight: 600;
         padding-top: 15px;
         margin-right: 10px;
-        height: 100px;
-      }
-    }
+        height: 100px; } }
     .search-input {
       padding-top: 10px;
       font-size: 24px;
       font-weight: 600;
       height: 40px;
-      width: 30%;
-    }
+      width: 30%; }
     .search-button {
       margin-left: 10px;
       margin-bottom: 15px;
       font-size: 18px;
-      font-weight: 600;
-    }
+      font-weight: 600; }
     .language-select {
       position: absolute;
-      right: 0;
+      right: 20px;
       width: 10%;
       padding-top: 15px;
-      .caret { color: white; margin-right: 45px;}
+      div { padding-left: 15px; }
+      .caret { color: white; left: 0;}
       .select-dropdown {
         border: 0;
         font-size: 20px;
-        font-weight: 500;
-      }
-    }
-  }
-}
+        font-weight: 500; } } } }
