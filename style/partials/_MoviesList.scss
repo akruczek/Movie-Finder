@@ -30,6 +30,7 @@
         text-decoration: underline;
         cursor: pointer; }
       .details {
+        h6, p {animation: slideDown 0.2s;}
         ul { display: inline; }
         li { display: inline; } } } } }
 
@@ -37,3 +38,8 @@
   color: grey;
   text-align: center;
   margin-top: 100px; }
+
+@keyframes slideDown {
+  from { line-height: 1px; }
+  to { line-height: 18px; }
+}

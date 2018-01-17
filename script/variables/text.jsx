@@ -16,7 +16,8 @@ export const languages = [
     Category: "Categories",
     Production_countries: "Production countries",
     Production_companies: "Production companies",
-    No_results: "No results :("
+    No_results: "No results :(",
+    search_info: "Type title and click SEARCH button to find interesting movies!"
   },
 
   {
@@ -36,6 +37,7 @@ export const languages = [
     Category: "Kategorie",
     Production_countries: "Kraje Produkcji",
     Production_companies: "Firmy Produkcyjne",
-    No_results: "Brak wyników :("
+    No_results: "Brak wyników :(",
+    search_info: "Wpisz tytuł i kliknij SZUKAJ aby znaleźć interesujące filmy!"
   }
 ]

@@ -52,6 +52,6 @@ export const MoviesList =(props)=> {
   ) : (
     <h1 className="empty">{props.text.No_results}</h1>
   ) : (
-    ""
+    <h1 className="empty">{props.text.search_info}</h1>
   );
 }

@@ -72,16 +72,18 @@ class Main extends React.Component {
 
   sortMovies =(event)=> {
     event.preventDefault();
-    let searchResult = this.state.searchResult.sort((a, b) => {
-      if (this.state.sortedAlpha) b = [a, a = b][0];
-      if (a.title < b.title) return -1;
-      if (b.title < a.title) return 1;
-      return 0;
-    });
-    this.setState({
-      searchResult,
-      sortedAlpha: !this.state.sortedAlpha
-    });
+    if (this.state.searchResult) {
+      let searchResult = this.state.searchResult.sort((a, b) => {
+        if (this.state.sortedAlpha) b = [a, a = b][0];
+        if (a.title < b.title) return -1;
+        if (b.title < a.title) return 1;
+        return 0;
+      });
+      this.setState({
+        searchResult,
+        sortedAlpha: !this.state.sortedAlpha
+      });
+    }
   }
 
   changeHandler =(event)=> this.setState({ [event.target.name]: event.target.value })

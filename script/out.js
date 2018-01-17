@@ -2229,7 +2229,8 @@ var languages = exports.languages = [{
   Category: "Categories",
   Production_countries: "Production countries",
   Production_companies: "Production companies",
-  No_results: "No results :("
+  No_results: "No results :(",
+  search_info: "Type title and click SEARCH button to find interesting movies!"
 }, {
   id: 1,
   langCode: "pl",
@@ -2247,7 +2248,8 @@ var languages = exports.languages = [{
   Category: "Kategorie",
   Production_countries: "Kraje Produkcji",
   Production_companies: "Firmy Produkcyjne",
-  No_results: "Brak wyników :("
+  No_results: "Brak wyników :(",
+  search_info: "Wpisz tytuł i kliknij SZUKAJ aby znaleźć interesujące filmy!"
 }];
 
 /***/ }),
@@ -2825,16 +2827,18 @@ var Main = function (_React$Component) {
 
     _this.sortMovies = function (event) {
       event.preventDefault();
-      var searchResult = _this.state.searchResult.sort(function (a, b) {
-        if (_this.state.sortedAlpha) b = [a, a = b][0];
-        if (a.title < b.title) return -1;
-        if (b.title < a.title) return 1;
-        return 0;
-      });
-      _this.setState({
-        searchResult: searchResult,
-        sortedAlpha: !_this.state.sortedAlpha
-      });
+      if (_this.state.searchResult) {
+        var searchResult = _this.state.searchResult.sort(function (a, b) {
+          if (_this.state.sortedAlpha) b = [a, a = b][0];
+          if (a.title < b.title) return -1;
+          if (b.title < a.title) return 1;
+          return 0;
+        });
+        _this.setState({
+          searchResult: searchResult,
+          sortedAlpha: !_this.state.sortedAlpha
+        });
+      }
     };
 
     _this.changeHandler = function (event) {
@@ -2915,7 +2919,7 @@ exports = module.exports = __webpack_require__(37)(false);
 
 
 // module
-exports.push([module.i, "html .search-bar {\n  display: flex;\n  height: 100px;\n  width: 100vw; }\n  html .search-bar ul {\n    align-items: center; }\n    html .search-bar ul i {\n      font-size: 48px; }\n    html .search-bar ul li a {\n      font-size: 24px;\n      font-weight: 600;\n      padding-top: 15px;\n      margin-right: 10px;\n      height: 100px; }\n    html .search-bar ul .search-input {\n      padding-top: 10px;\n      font-size: 24px;\n      font-weight: 600;\n      height: 40px;\n      width: 30%; }\n    html .search-bar ul .search-button {\n      margin-left: 10px;\n      margin-bottom: 15px;\n      font-size: 18px;\n      font-weight: 600; }\n    html .search-bar ul .language-select {\n      position: absolute;\n      right: 20px;\n      width: 10%;\n      padding-top: 15px; }\n      html .search-bar ul .language-select div {\n        padding-left: 15px; }\n      html .search-bar ul .language-select .caret {\n        color: white;\n        left: 0; }\n      html .search-bar ul .language-select .select-dropdown {\n        border: 0;\n        font-size: 20px;\n        font-weight: 500; }\n\nhtml .movies-list {\n  margin-top: 50px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n  html .movies-list .collection-item {\n    width: 60vw;\n    display: flex; }\n    html .movies-list .collection-item img {\n      height: 280px;\n      margin-right: 5px;\n      align-self: center; }\n    html .movies-list .collection-item .error-poster {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      align-self: center;\n      width: 245px;\n      text-align: center; }\n    html .movies-list .collection-item .description {\n      width: 100%;\n      display: flex;\n      flex-direction: column;\n      align-self: center;\n      align-items: center;\n      align-content: center;\n      text-align: center; }\n      html .movies-list .collection-item .description span {\n        margin-top: 10px;\n        text-decoration: underline;\n        cursor: pointer; }\n      html .movies-list .collection-item .description .details ul {\n        display: inline; }\n      html .movies-list .collection-item .description .details li {\n        display: inline; }\n\nhtml .empty {\n  color: grey;\n  text-align: center;\n  margin-top: 100px; }\n", ""]);
+exports.push([module.i, "html .search-bar {\n  display: flex;\n  height: 100px;\n  width: 100vw; }\n  html .search-bar ul {\n    align-items: center; }\n    html .search-bar ul i {\n      font-size: 48px; }\n    html .search-bar ul li a {\n      font-size: 24px;\n      font-weight: 600;\n      padding-top: 15px;\n      margin-right: 10px;\n      height: 100px; }\n    html .search-bar ul .search-input {\n      padding-top: 10px;\n      font-size: 24px;\n      font-weight: 600;\n      height: 40px;\n      width: 30%; }\n    html .search-bar ul .search-button {\n      margin-left: 10px;\n      margin-bottom: 15px;\n      font-size: 18px;\n      font-weight: 600; }\n    html .search-bar ul .language-select {\n      position: absolute;\n      right: 20px;\n      width: 10%;\n      padding-top: 15px; }\n      html .search-bar ul .language-select div {\n        padding-left: 15px; }\n      html .search-bar ul .language-select .caret {\n        color: white;\n        left: 0; }\n      html .search-bar ul .language-select .select-dropdown {\n        border: 0;\n        font-size: 20px;\n        font-weight: 500; }\n\nhtml .movies-list {\n  margin-top: 50px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n  html .movies-list .collection-item {\n    width: 60vw;\n    display: flex; }\n    html .movies-list .collection-item img {\n      height: 280px;\n      margin-right: 5px;\n      align-self: center; }\n    html .movies-list .collection-item .error-poster {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      align-self: center;\n      width: 245px;\n      text-align: center; }\n    html .movies-list .collection-item .description {\n      width: 100%;\n      display: flex;\n      flex-direction: column;\n      align-self: center;\n      align-items: center;\n      align-content: center;\n      text-align: center; }\n      html .movies-list .collection-item .description span {\n        margin-top: 10px;\n        text-decoration: underline;\n        cursor: pointer; }\n      html .movies-list .collection-item .description .details h6, html .movies-list .collection-item .description .details p {\n        animation: slideDown 0.2s; }\n      html .movies-list .collection-item .description .details ul {\n        display: inline; }\n      html .movies-list .collection-item .description .details li {\n        display: inline; }\n\nhtml .empty {\n  color: grey;\n  text-align: center;\n  margin-top: 100px; }\n\n@keyframes slideDown {\n  from {\n    line-height: 1px; }\n  to {\n    line-height: 18px; } }\n", ""]);
 
 // exports
 
@@ -42844,7 +42848,11 @@ var MoviesList = exports.MoviesList = function MoviesList(props) {
     "h1",
     { className: "empty" },
     props.text.No_results
-  ) : "";
+  ) : _react2.default.createElement(
+    "h1",
+    { className: "empty" },
+    props.text.search_info
+  );
 };
 
 /***/ })
