@@ -4,8 +4,10 @@
   flex-direction: column;
   align-items: center;
   .collection-item {
-    width: 60vw;
     display: flex;
+    @media (max-width: 767px) {flex-direction: column;} //mobile
+    @media (max-width: 1023px) {width: 100vw;} //tablet
+    @media (min-width: 1024px) {width: 60vw;} //laptop, desktop+
     img {
       height: 280px;
       margin-right: 5px;
@@ -18,19 +20,22 @@
       width: 245px;
       text-align: center; }
     .description {
-      width: 100%;
       display: flex;
       flex-direction: column;
       align-self: center;
       align-items: center;
       align-content: center;
       text-align: center;
+      width: 100%;
       span {
         margin-top: 10px;
         text-decoration: underline;
         cursor: pointer; }
       .details {
+        width: 100%;
         h6, p {animation: slideDown 0.2s;}
+        h6:last-of-type {
+          @media (max-width: 424px) { font-size: 10px; } }  //mobile medium-
         ul { display: inline; }
         li { display: inline; } } } } }
 
@@ -41,5 +46,4 @@
 
 @keyframes slideDown {
   from { line-height: 1px; }
-  to { line-height: 18px; }
-}
+  to { line-height: 18px; } }

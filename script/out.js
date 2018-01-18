@@ -71,9 +71,9 @@
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(50);
-} else {
   module.exports = __webpack_require__(51);
+} else {
+  module.exports = __webpack_require__(52);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
@@ -104,11 +104,11 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(52)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(53)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(53)();
+  module.exports = __webpack_require__(54)();
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
@@ -1277,241 +1277,6 @@ module.exports = ReactPropTypesSecret;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Toast = exports.Tag = exports.Tabs = exports.Table = exports.Tab = exports.Slider = exports.Slide = exports.SideNavItem = exports.SideNav = exports.Section = exports.SearchForm = exports.Row = exports.ProgressBar = exports.Preloader = exports.Parallax = exports.PaginationButton = exports.Pagination = exports.OverlayTrigger = exports.Overlay = exports.Navbar = exports.NavItem = exports.Modal = exports.MenuItem = exports.MediaBox = exports.Input = exports.Icon = exports.Footer = exports.Dropdown = exports.Divider = exports.Container = exports.CollectionItem = exports.Collection = exports.CollapsibleItem = exports.Collapsible = exports.Col = exports.Chip = exports.CardTitle = exports.CardPanel = exports.Card = exports.Carousel = exports.Button = exports.Breadcrumb = exports.Badge = exports.Autocomplete = undefined;
-
-var _Autocomplete = __webpack_require__(49);
-
-var _Autocomplete2 = _interopRequireDefault(_Autocomplete);
-
-var _Badge = __webpack_require__(54);
-
-var _Badge2 = _interopRequireDefault(_Badge);
-
-var _Breadcrumb = __webpack_require__(55);
-
-var _Breadcrumb2 = _interopRequireDefault(_Breadcrumb);
-
-var _Button = __webpack_require__(23);
-
-var _Button2 = _interopRequireDefault(_Button);
-
-var _Carousel = __webpack_require__(56);
-
-var _Carousel2 = _interopRequireDefault(_Carousel);
-
-var _Card = __webpack_require__(57);
-
-var _Card2 = _interopRequireDefault(_Card);
-
-var _CardPanel = __webpack_require__(58);
-
-var _CardPanel2 = _interopRequireDefault(_CardPanel);
-
-var _CardTitle = __webpack_require__(59);
-
-var _CardTitle2 = _interopRequireDefault(_CardTitle);
-
-var _Chip = __webpack_require__(27);
-
-var _Chip2 = _interopRequireDefault(_Chip);
-
-var _Col = __webpack_require__(14);
-
-var _Col2 = _interopRequireDefault(_Col);
-
-var _Collapsible = __webpack_require__(60);
-
-var _Collapsible2 = _interopRequireDefault(_Collapsible);
-
-var _CollapsibleItem = __webpack_require__(61);
-
-var _CollapsibleItem2 = _interopRequireDefault(_CollapsibleItem);
-
-var _Collection = __webpack_require__(62);
-
-var _Collection2 = _interopRequireDefault(_Collection);
-
-var _CollectionItem = __webpack_require__(63);
-
-var _CollectionItem2 = _interopRequireDefault(_CollectionItem);
-
-var _Container = __webpack_require__(64);
-
-var _Container2 = _interopRequireDefault(_Container);
-
-var _Divider = __webpack_require__(65);
-
-var _Divider2 = _interopRequireDefault(_Divider);
-
-var _Dropdown = __webpack_require__(66);
-
-var _Dropdown2 = _interopRequireDefault(_Dropdown);
-
-var _Footer = __webpack_require__(67);
-
-var _Footer2 = _interopRequireDefault(_Footer);
-
-var _Icon = __webpack_require__(6);
-
-var _Icon2 = _interopRequireDefault(_Icon);
-
-var _Input = __webpack_require__(68);
-
-var _Input2 = _interopRequireDefault(_Input);
-
-var _MediaBox = __webpack_require__(69);
-
-var _MediaBox2 = _interopRequireDefault(_MediaBox);
-
-var _MenuItem = __webpack_require__(70);
-
-var _MenuItem2 = _interopRequireDefault(_MenuItem);
-
-var _Modal = __webpack_require__(71);
-
-var _Modal2 = _interopRequireDefault(_Modal);
-
-var _NavItem = __webpack_require__(75);
-
-var _NavItem2 = _interopRequireDefault(_NavItem);
-
-var _Navbar = __webpack_require__(76);
-
-var _Navbar2 = _interopRequireDefault(_Navbar);
-
-var _Overlay = __webpack_require__(29);
-
-var _Overlay2 = _interopRequireDefault(_Overlay);
-
-var _OverlayTrigger = __webpack_require__(28);
-
-var _OverlayTrigger2 = _interopRequireDefault(_OverlayTrigger);
-
-var _Pagination = __webpack_require__(77);
-
-var _Pagination2 = _interopRequireDefault(_Pagination);
-
-var _PaginationButton = __webpack_require__(30);
-
-var _PaginationButton2 = _interopRequireDefault(_PaginationButton);
-
-var _Parallax = __webpack_require__(78);
-
-var _Parallax2 = _interopRequireDefault(_Parallax);
-
-var _Preloader = __webpack_require__(79);
-
-var _Preloader2 = _interopRequireDefault(_Preloader);
-
-var _ProgressBar = __webpack_require__(81);
-
-var _ProgressBar2 = _interopRequireDefault(_ProgressBar);
-
-var _Row = __webpack_require__(24);
-
-var _Row2 = _interopRequireDefault(_Row);
-
-var _SearchForm = __webpack_require__(82);
-
-var _SearchForm2 = _interopRequireDefault(_SearchForm);
-
-var _Section = __webpack_require__(83);
-
-var _Section2 = _interopRequireDefault(_Section);
-
-var _SideNav = __webpack_require__(84);
-
-var _SideNav2 = _interopRequireDefault(_SideNav);
-
-var _SideNavItem = __webpack_require__(85);
-
-var _SideNavItem2 = _interopRequireDefault(_SideNavItem);
-
-var _Slide = __webpack_require__(87);
-
-var _Slide2 = _interopRequireDefault(_Slide);
-
-var _Slider = __webpack_require__(88);
-
-var _Slider2 = _interopRequireDefault(_Slider);
-
-var _Tab = __webpack_require__(89);
-
-var _Tab2 = _interopRequireDefault(_Tab);
-
-var _Table = __webpack_require__(90);
-
-var _Table2 = _interopRequireDefault(_Table);
-
-var _Tabs = __webpack_require__(91);
-
-var _Tabs2 = _interopRequireDefault(_Tabs);
-
-var _Tag = __webpack_require__(92);
-
-var _Tag2 = _interopRequireDefault(_Tag);
-
-var _Toast = __webpack_require__(93);
-
-var _Toast2 = _interopRequireDefault(_Toast);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.Autocomplete = _Autocomplete2.default;
-exports.Badge = _Badge2.default;
-exports.Breadcrumb = _Breadcrumb2.default;
-exports.Button = _Button2.default;
-exports.Carousel = _Carousel2.default;
-exports.Card = _Card2.default;
-exports.CardPanel = _CardPanel2.default;
-exports.CardTitle = _CardTitle2.default;
-exports.Chip = _Chip2.default;
-exports.Col = _Col2.default;
-exports.Collapsible = _Collapsible2.default;
-exports.CollapsibleItem = _CollapsibleItem2.default;
-exports.Collection = _Collection2.default;
-exports.CollectionItem = _CollectionItem2.default;
-exports.Container = _Container2.default;
-exports.Divider = _Divider2.default;
-exports.Dropdown = _Dropdown2.default;
-exports.Footer = _Footer2.default;
-exports.Icon = _Icon2.default;
-exports.Input = _Input2.default;
-exports.MediaBox = _MediaBox2.default;
-exports.MenuItem = _MenuItem2.default;
-exports.Modal = _Modal2.default;
-exports.NavItem = _NavItem2.default;
-exports.Navbar = _Navbar2.default;
-exports.Overlay = _Overlay2.default;
-exports.OverlayTrigger = _OverlayTrigger2.default;
-exports.Pagination = _Pagination2.default;
-exports.PaginationButton = _PaginationButton2.default;
-exports.Parallax = _Parallax2.default;
-exports.Preloader = _Preloader2.default;
-exports.ProgressBar = _ProgressBar2.default;
-exports.Row = _Row2.default;
-exports.SearchForm = _SearchForm2.default;
-exports.Section = _Section2.default;
-exports.SideNav = _SideNav2.default;
-exports.SideNavItem = _SideNavItem2.default;
-exports.Slide = _Slide2.default;
-exports.Slider = _Slider2.default;
-exports.Tab = _Tab2.default;
-exports.Table = _Table2.default;
-exports.Tabs = _Tabs2.default;
-exports.Tag = _Tag2.default;
-exports.Toast = _Toast2.default;
-
-/***/ }),
-/* 23 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -1701,7 +1466,7 @@ Button.defaultProps = {
 exports.default = Button;
 
 /***/ }),
-/* 24 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1752,7 +1517,7 @@ Row.propTypes = {
 exports.default = Row;
 
 /***/ }),
-/* 25 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1794,7 +1559,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 26 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1835,6 +1600,241 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Toast = exports.Tag = exports.Tabs = exports.Table = exports.Tab = exports.Slider = exports.Slide = exports.SideNavItem = exports.SideNav = exports.Section = exports.SearchForm = exports.Row = exports.ProgressBar = exports.Preloader = exports.Parallax = exports.PaginationButton = exports.Pagination = exports.OverlayTrigger = exports.Overlay = exports.Navbar = exports.NavItem = exports.Modal = exports.MenuItem = exports.MediaBox = exports.Input = exports.Icon = exports.Footer = exports.Dropdown = exports.Divider = exports.Container = exports.CollectionItem = exports.Collection = exports.CollapsibleItem = exports.Collapsible = exports.Col = exports.Chip = exports.CardTitle = exports.CardPanel = exports.Card = exports.Carousel = exports.Button = exports.Breadcrumb = exports.Badge = exports.Autocomplete = undefined;
+
+var _Autocomplete = __webpack_require__(50);
+
+var _Autocomplete2 = _interopRequireDefault(_Autocomplete);
+
+var _Badge = __webpack_require__(55);
+
+var _Badge2 = _interopRequireDefault(_Badge);
+
+var _Breadcrumb = __webpack_require__(56);
+
+var _Breadcrumb2 = _interopRequireDefault(_Breadcrumb);
+
+var _Button = __webpack_require__(22);
+
+var _Button2 = _interopRequireDefault(_Button);
+
+var _Carousel = __webpack_require__(57);
+
+var _Carousel2 = _interopRequireDefault(_Carousel);
+
+var _Card = __webpack_require__(58);
+
+var _Card2 = _interopRequireDefault(_Card);
+
+var _CardPanel = __webpack_require__(59);
+
+var _CardPanel2 = _interopRequireDefault(_CardPanel);
+
+var _CardTitle = __webpack_require__(60);
+
+var _CardTitle2 = _interopRequireDefault(_CardTitle);
+
+var _Chip = __webpack_require__(27);
+
+var _Chip2 = _interopRequireDefault(_Chip);
+
+var _Col = __webpack_require__(14);
+
+var _Col2 = _interopRequireDefault(_Col);
+
+var _Collapsible = __webpack_require__(61);
+
+var _Collapsible2 = _interopRequireDefault(_Collapsible);
+
+var _CollapsibleItem = __webpack_require__(62);
+
+var _CollapsibleItem2 = _interopRequireDefault(_CollapsibleItem);
+
+var _Collection = __webpack_require__(63);
+
+var _Collection2 = _interopRequireDefault(_Collection);
+
+var _CollectionItem = __webpack_require__(64);
+
+var _CollectionItem2 = _interopRequireDefault(_CollectionItem);
+
+var _Container = __webpack_require__(65);
+
+var _Container2 = _interopRequireDefault(_Container);
+
+var _Divider = __webpack_require__(66);
+
+var _Divider2 = _interopRequireDefault(_Divider);
+
+var _Dropdown = __webpack_require__(67);
+
+var _Dropdown2 = _interopRequireDefault(_Dropdown);
+
+var _Footer = __webpack_require__(68);
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
+var _Icon = __webpack_require__(6);
+
+var _Icon2 = _interopRequireDefault(_Icon);
+
+var _Input = __webpack_require__(69);
+
+var _Input2 = _interopRequireDefault(_Input);
+
+var _MediaBox = __webpack_require__(70);
+
+var _MediaBox2 = _interopRequireDefault(_MediaBox);
+
+var _MenuItem = __webpack_require__(71);
+
+var _MenuItem2 = _interopRequireDefault(_MenuItem);
+
+var _Modal = __webpack_require__(72);
+
+var _Modal2 = _interopRequireDefault(_Modal);
+
+var _NavItem = __webpack_require__(76);
+
+var _NavItem2 = _interopRequireDefault(_NavItem);
+
+var _Navbar = __webpack_require__(77);
+
+var _Navbar2 = _interopRequireDefault(_Navbar);
+
+var _Overlay = __webpack_require__(29);
+
+var _Overlay2 = _interopRequireDefault(_Overlay);
+
+var _OverlayTrigger = __webpack_require__(28);
+
+var _OverlayTrigger2 = _interopRequireDefault(_OverlayTrigger);
+
+var _Pagination = __webpack_require__(78);
+
+var _Pagination2 = _interopRequireDefault(_Pagination);
+
+var _PaginationButton = __webpack_require__(30);
+
+var _PaginationButton2 = _interopRequireDefault(_PaginationButton);
+
+var _Parallax = __webpack_require__(79);
+
+var _Parallax2 = _interopRequireDefault(_Parallax);
+
+var _Preloader = __webpack_require__(80);
+
+var _Preloader2 = _interopRequireDefault(_Preloader);
+
+var _ProgressBar = __webpack_require__(82);
+
+var _ProgressBar2 = _interopRequireDefault(_ProgressBar);
+
+var _Row = __webpack_require__(23);
+
+var _Row2 = _interopRequireDefault(_Row);
+
+var _SearchForm = __webpack_require__(83);
+
+var _SearchForm2 = _interopRequireDefault(_SearchForm);
+
+var _Section = __webpack_require__(84);
+
+var _Section2 = _interopRequireDefault(_Section);
+
+var _SideNav = __webpack_require__(85);
+
+var _SideNav2 = _interopRequireDefault(_SideNav);
+
+var _SideNavItem = __webpack_require__(86);
+
+var _SideNavItem2 = _interopRequireDefault(_SideNavItem);
+
+var _Slide = __webpack_require__(88);
+
+var _Slide2 = _interopRequireDefault(_Slide);
+
+var _Slider = __webpack_require__(89);
+
+var _Slider2 = _interopRequireDefault(_Slider);
+
+var _Tab = __webpack_require__(90);
+
+var _Tab2 = _interopRequireDefault(_Tab);
+
+var _Table = __webpack_require__(91);
+
+var _Table2 = _interopRequireDefault(_Table);
+
+var _Tabs = __webpack_require__(92);
+
+var _Tabs2 = _interopRequireDefault(_Tabs);
+
+var _Tag = __webpack_require__(93);
+
+var _Tag2 = _interopRequireDefault(_Tag);
+
+var _Toast = __webpack_require__(94);
+
+var _Toast2 = _interopRequireDefault(_Toast);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.Autocomplete = _Autocomplete2.default;
+exports.Badge = _Badge2.default;
+exports.Breadcrumb = _Breadcrumb2.default;
+exports.Button = _Button2.default;
+exports.Carousel = _Carousel2.default;
+exports.Card = _Card2.default;
+exports.CardPanel = _CardPanel2.default;
+exports.CardTitle = _CardTitle2.default;
+exports.Chip = _Chip2.default;
+exports.Col = _Col2.default;
+exports.Collapsible = _Collapsible2.default;
+exports.CollapsibleItem = _CollapsibleItem2.default;
+exports.Collection = _Collection2.default;
+exports.CollectionItem = _CollectionItem2.default;
+exports.Container = _Container2.default;
+exports.Divider = _Divider2.default;
+exports.Dropdown = _Dropdown2.default;
+exports.Footer = _Footer2.default;
+exports.Icon = _Icon2.default;
+exports.Input = _Input2.default;
+exports.MediaBox = _MediaBox2.default;
+exports.MenuItem = _MenuItem2.default;
+exports.Modal = _Modal2.default;
+exports.NavItem = _NavItem2.default;
+exports.Navbar = _Navbar2.default;
+exports.Overlay = _Overlay2.default;
+exports.OverlayTrigger = _OverlayTrigger2.default;
+exports.Pagination = _Pagination2.default;
+exports.PaginationButton = _PaginationButton2.default;
+exports.Parallax = _Parallax2.default;
+exports.Preloader = _Preloader2.default;
+exports.ProgressBar = _ProgressBar2.default;
+exports.Row = _Row2.default;
+exports.SearchForm = _SearchForm2.default;
+exports.Section = _Section2.default;
+exports.SideNav = _SideNav2.default;
+exports.SideNavItem = _SideNavItem2.default;
+exports.Slide = _Slide2.default;
+exports.Slider = _Slider2.default;
+exports.Tab = _Tab2.default;
+exports.Table = _Table2.default;
+exports.Tabs = _Tabs2.default;
+exports.Tag = _Tag2.default;
+exports.Toast = _Toast2.default;
 
 /***/ }),
 /* 27 */
@@ -2033,7 +2033,7 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactDom = __webpack_require__(72);
+var _reactDom = __webpack_require__(73);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -2746,9 +2746,7 @@ var _reactDom = __webpack_require__(42);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactMaterialize = __webpack_require__(22);
-
-var _SearchBar = __webpack_require__(94);
+var _SearchBar = __webpack_require__(49);
 
 var _MoviesList = __webpack_require__(95);
 
@@ -2763,8 +2761,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-// &api_key=73a3e42b7075df257f789c920cc37996
 
 var Main = function (_React$Component) {
   _inherits(Main, _React$Component);
@@ -2786,7 +2782,7 @@ var Main = function (_React$Component) {
       }
 
       fetch("https://api.themoviedb.org/3/search/movie?api_key=73a3e42b7075df257f789c920cc37996&query=" + searchString + "&language=" + _this.state.text.langCode).then(function (response) {
-        return response && response.ok ? response.json() : "Błąd Połączenia";
+        return response && response.ok ? response.json() : "connection error";
       }).then(function (data) {
         return _this.setState({
           searchResult: data.results,
@@ -2812,7 +2808,7 @@ var Main = function (_React$Component) {
 
     _this.catchMovieDetails = function (id, index) {
       fetch("https://api.themoviedb.org/3/movie/" + id + "?api_key=73a3e42b7075df257f789c920cc37996").then(function (response) {
-        return response && response.ok ? response.json() : "Błąd Połączenia";
+        return response && response.ok ? response.json() : "connection error";
       }).then(function (data) {
         var searchResult = _this.state.searchResult;
         searchResult[index].genres = data.genres;
@@ -2854,6 +2850,24 @@ var Main = function (_React$Component) {
     };
     return _this;
   }
+
+  //GET suitable movies from API
+
+
+  //onClick for SEARCH button
+
+
+  //onChange for change language select
+
+
+  //GET movie details ONLY AFTER clicking 'more details' span
+
+
+  //onClick for sort movies button
+
+
+  //changeHandler for input
+
 
   _createClass(Main, [{
     key: "render",
@@ -2919,7 +2933,7 @@ exports = module.exports = __webpack_require__(37)(false);
 
 
 // module
-exports.push([module.i, "html .search-bar {\n  display: flex;\n  height: 100px;\n  width: 100vw; }\n  html .search-bar ul {\n    align-items: center; }\n    html .search-bar ul i {\n      font-size: 48px; }\n    html .search-bar ul li a {\n      font-size: 24px;\n      font-weight: 600;\n      padding-top: 15px;\n      margin-right: 10px;\n      height: 100px; }\n    html .search-bar ul .search-input {\n      padding-top: 10px;\n      font-size: 24px;\n      font-weight: 600;\n      height: 40px;\n      width: 30%; }\n    html .search-bar ul .search-button {\n      margin-left: 10px;\n      margin-bottom: 15px;\n      font-size: 18px;\n      font-weight: 600; }\n    html .search-bar ul .language-select {\n      position: absolute;\n      right: 20px;\n      width: 10%;\n      padding-top: 15px; }\n      html .search-bar ul .language-select div {\n        padding-left: 15px; }\n      html .search-bar ul .language-select .caret {\n        color: white;\n        left: 0; }\n      html .search-bar ul .language-select .select-dropdown {\n        border: 0;\n        font-size: 20px;\n        font-weight: 500; }\n\nhtml .movies-list {\n  margin-top: 50px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n  html .movies-list .collection-item {\n    width: 60vw;\n    display: flex; }\n    html .movies-list .collection-item img {\n      height: 280px;\n      margin-right: 5px;\n      align-self: center; }\n    html .movies-list .collection-item .error-poster {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      align-self: center;\n      width: 245px;\n      text-align: center; }\n    html .movies-list .collection-item .description {\n      width: 100%;\n      display: flex;\n      flex-direction: column;\n      align-self: center;\n      align-items: center;\n      align-content: center;\n      text-align: center; }\n      html .movies-list .collection-item .description span {\n        margin-top: 10px;\n        text-decoration: underline;\n        cursor: pointer; }\n      html .movies-list .collection-item .description .details h6, html .movies-list .collection-item .description .details p {\n        animation: slideDown 0.2s; }\n      html .movies-list .collection-item .description .details ul {\n        display: inline; }\n      html .movies-list .collection-item .description .details li {\n        display: inline; }\n\nhtml .empty {\n  color: grey;\n  text-align: center;\n  margin-top: 100px; }\n\n@keyframes slideDown {\n  from {\n    line-height: 1px; }\n  to {\n    line-height: 18px; } }\n", ""]);
+exports.push([module.i, "html .search-bar {\n  display: flex;\n  height: 100px;\n  width: 100vw; }\n  html .search-bar .hide-on-med-and-down {\n    align-items: center;\n    display: flex !important; }\n    @media (min-width: 425px) {\n      html .search-bar .hide-on-med-and-down i {\n        font-size: 32px; } }\n    @media (min-width: 768px) {\n      html .search-bar .hide-on-med-and-down i {\n        font-size: 48px; } }\n    html .search-bar .hide-on-med-and-down li a {\n      font-size: 24px;\n      font-weight: 600;\n      padding-top: 15px;\n      margin-right: 10px;\n      height: 100px; }\n    html .search-bar .hide-on-med-and-down .search-input {\n      padding-top: 10px;\n      font-weight: 600;\n      width: 30%;\n      height: 40px; }\n      @media (min-width: 425px) {\n        html .search-bar .hide-on-med-and-down .search-input {\n          font-size: 18px; } }\n      @media (min-width: 768px) {\n        html .search-bar .hide-on-med-and-down .search-input {\n          font-size: 24px; } }\n    html .search-bar .hide-on-med-and-down .search-button {\n      margin-left: 10px;\n      margin-bottom: 15px;\n      font-size: 18px;\n      font-weight: 600; }\n    html .search-bar .hide-on-med-and-down .language-select {\n      position: absolute;\n      width: 10%;\n      padding-top: 15px; }\n      @media (max-width: 374px) {\n        html .search-bar .hide-on-med-and-down .language-select {\n          right: 40px;\n          width: 100px;\n          top: 45px; } }\n      @media (min-width: 375px) {\n        html .search-bar .hide-on-med-and-down .language-select {\n          right: 75px;\n          width: 100px;\n          top: 45px; } }\n      @media (min-width: 425px) {\n        html .search-bar .hide-on-med-and-down .language-select {\n          right: -5px;\n          width: 100px;\n          top: 8px; } }\n      @media (min-width: 768px) {\n        html .search-bar .hide-on-med-and-down .language-select {\n          right: 60px;\n          width: 100px; } }\n      @media (min-width: 1024px) {\n        html .search-bar .hide-on-med-and-down .language-select {\n          right: 20px; } }\n      html .search-bar .hide-on-med-and-down .language-select div {\n        padding-left: 15px; }\n      html .search-bar .hide-on-med-and-down .language-select .caret {\n        color: white;\n        left: 0; }\n      html .search-bar .hide-on-med-and-down .language-select .select-dropdown {\n        border: 0;\n        font-weight: 500; }\n        @media (max-width: 767px) {\n          html .search-bar .hide-on-med-and-down .language-select .select-dropdown {\n            font-size: 16px; } }\n        @media (min-width: 768px) {\n          html .search-bar .hide-on-med-and-down .language-select .select-dropdown {\n            font-size: 20px; } }\n\nhtml #nav-mobile {\n  display: none; }\n\nhtml .button-collapse {\n  display: none; }\n\nhtml .movies-list {\n  margin-top: 50px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n  html .movies-list .collection-item {\n    display: flex; }\n    @media (max-width: 767px) {\n      html .movies-list .collection-item {\n        flex-direction: column; } }\n    @media (max-width: 1023px) {\n      html .movies-list .collection-item {\n        width: 100vw; } }\n    @media (min-width: 1024px) {\n      html .movies-list .collection-item {\n        width: 60vw; } }\n    html .movies-list .collection-item img {\n      height: 280px;\n      margin-right: 5px;\n      align-self: center; }\n    html .movies-list .collection-item .error-poster {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      align-self: center;\n      width: 245px;\n      text-align: center; }\n    html .movies-list .collection-item .description {\n      display: flex;\n      flex-direction: column;\n      align-self: center;\n      align-items: center;\n      align-content: center;\n      text-align: center;\n      width: 100%; }\n      html .movies-list .collection-item .description span {\n        margin-top: 10px;\n        text-decoration: underline;\n        cursor: pointer; }\n      html .movies-list .collection-item .description .details {\n        width: 100%; }\n        html .movies-list .collection-item .description .details h6, html .movies-list .collection-item .description .details p {\n          animation: slideDown 0.2s; }\n        @media (max-width: 424px) {\n          html .movies-list .collection-item .description .details h6:last-of-type {\n            font-size: 10px; } }\n        html .movies-list .collection-item .description .details ul {\n          display: inline; }\n        html .movies-list .collection-item .description .details li {\n          display: inline; }\n\nhtml .empty {\n  color: grey;\n  text-align: center;\n  margin-top: 100px; }\n\n@keyframes slideDown {\n  from {\n    line-height: 1px; }\n  to {\n    line-height: 18px; } }\n", ""]);
 
 // exports
 
@@ -5239,8 +5253,8 @@ var containsNode = __webpack_require__(19);
 var focusNode = __webpack_require__(20);
 var emptyObject = __webpack_require__(7);
 var checkPropTypes = __webpack_require__(13);
-var hyphenateStyleName = __webpack_require__(25);
-var camelizeStyleName = __webpack_require__(26);
+var hyphenateStyleName = __webpack_require__(24);
+var camelizeStyleName = __webpack_require__(25);
 
 /**
  * WARNING: DO NOT manually require this module.
@@ -20687,6 +20701,67 @@ module.exports = camelize;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.SearchBar = undefined;
+
+var _react = __webpack_require__(12);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactMaterialize = __webpack_require__(26);
+
+var _text = __webpack_require__(31);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var SearchBar = exports.SearchBar = function SearchBar(props) {
+
+  return _react2.default.createElement(
+    _reactMaterialize.Navbar,
+    { fixed: true, className: "search-bar orange darken-2" },
+    _react2.default.createElement(
+      _reactMaterialize.NavItem,
+      { onClick: props.sortMovies },
+      _react2.default.createElement(
+        _reactMaterialize.Icon,
+        { large: true },
+        "sort_by_alpha"
+      )
+    ),
+    _react2.default.createElement("input", { className: "search-input", name: "searchInput", value: props.searchInput, onChange: props.changeHandler,
+      placeholder: props.text.search_movies }),
+    _react2.default.createElement(
+      _reactMaterialize.Button,
+      { className: "search-button", onClick: props.searchMovies },
+      props.text.search
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "language-select" },
+      _react2.default.createElement(
+        _reactMaterialize.Input,
+        { type: "select", onChange: props.changeLanguage, name: "langId", value: String(props.langId) },
+        _text.languages.map(function (item) {
+          return _react2.default.createElement(
+            "option",
+            { key: item.id, value: item.id },
+            item.langName
+          );
+        })
+      )
+    )
+  );
+};
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -20949,7 +21024,7 @@ Autocomplete.propTypes = {
 exports.default = Autocomplete;
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20977,7 +21052,7 @@ isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_F
 
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22342,7 +22417,7 @@ module.exports = react;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22892,7 +22967,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22957,7 +23032,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23015,7 +23090,7 @@ Badge.propTypes = {
 exports.default = Badge;
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23071,7 +23146,7 @@ Breadcrumb.defaultProps = {
 exports.default = Breadcrumb;
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23246,7 +23321,7 @@ Carousel.propTypes = {
 exports.default = Carousel;
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23362,7 +23437,7 @@ Card.propTypes = {
 exports.default = Card;
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23414,7 +23489,7 @@ CardPanel.propTypes = {
 exports.default = CardPanel;
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23514,7 +23589,7 @@ CardTitle.propTypes = {
 exports.default = CardTitle;
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23663,7 +23738,7 @@ Collapsible.defaultProps = {
 exports.default = Collapsible;
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23768,7 +23843,7 @@ CollapsibleItem.defaultProps = {
 exports.default = CollapsibleItem;
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23871,7 +23946,7 @@ Collection.propTypes = {
 exports.default = Collection;
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23953,7 +24028,7 @@ CollectionItem.propTypes = {
 exports.default = CollectionItem;
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23988,7 +24063,7 @@ Container.propTypes = {
 exports.default = Container;
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24010,7 +24085,7 @@ var Divider = function Divider() {
 exports.default = Divider;
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24147,7 +24222,7 @@ Dropdown.propTypes = {
 exports.default = Dropdown;
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24173,7 +24248,7 @@ var _classnames = __webpack_require__(2);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _Row = __webpack_require__(24);
+var _Row = __webpack_require__(23);
 
 var _Row2 = _interopRequireDefault(_Row);
 
@@ -24264,7 +24339,7 @@ Footer.propTypes = {
 exports.default = Footer;
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24678,7 +24753,7 @@ Input.defaultProps = { type: 'text', checked: false };
 exports.default = Input;
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24759,7 +24834,7 @@ MediaBox.propTypes = {
 exports.default = MediaBox;
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24843,7 +24918,7 @@ MenuItem.propTypes = {
 exports.default = MenuItem;
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24865,7 +24940,7 @@ var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Button = __webpack_require__(23);
+var _Button = __webpack_require__(22);
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -25063,7 +25138,7 @@ Modal.defaultProps = {
 exports.default = Modal;
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25101,15 +25176,15 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(73);
-} else {
   module.exports = __webpack_require__(74);
+} else {
+  module.exports = __webpack_require__(75);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25345,7 +25420,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
 
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25379,8 +25454,8 @@ var containsNode = __webpack_require__(19);
 var focusNode = __webpack_require__(20);
 var emptyObject = __webpack_require__(7);
 var checkPropTypes = __webpack_require__(13);
-var hyphenateStyleName = __webpack_require__(25);
-var camelizeStyleName = __webpack_require__(26);
+var hyphenateStyleName = __webpack_require__(24);
+var camelizeStyleName = __webpack_require__(25);
 
 /**
  * WARNING: DO NOT manually require this module.
@@ -40747,7 +40822,7 @@ module.exports = reactDom;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40800,7 +40875,7 @@ NavItem.propTypes = {
 exports.default = NavItem;
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40975,7 +41050,7 @@ Navbar.defaultProps = {
 exports.default = Navbar;
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41167,7 +41242,7 @@ Pagination.defaultProps = {
 exports.default = Pagination;
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41245,7 +41320,7 @@ Parallax.propTypes = {
 exports.default = Parallax;
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41269,7 +41344,7 @@ var _classnames = __webpack_require__(2);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _Spinner = __webpack_require__(80);
+var _Spinner = __webpack_require__(81);
 
 var _Spinner2 = _interopRequireDefault(_Spinner);
 
@@ -41357,7 +41432,7 @@ Preloader.defaultProps = {
 exports.default = Preloader;
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41426,7 +41501,7 @@ Spinner.propTypes = {
 exports.default = Spinner;
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41485,7 +41560,7 @@ ProgressBar.propTypes = {
 exports.default = ProgressBar;
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41534,7 +41609,7 @@ var SearchForm = function SearchForm() {
 exports.default = SearchForm;
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41569,7 +41644,7 @@ Section.propTypes = {
 exports.default = Section;
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41690,7 +41765,7 @@ SideNav.propTypes = {
 exports.default = SideNav;
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41716,7 +41791,7 @@ var _classnames = __webpack_require__(2);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _UserView = __webpack_require__(86);
+var _UserView = __webpack_require__(87);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -41796,7 +41871,7 @@ SideNavItem.propTypes = {
 exports.default = SideNavItem;
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41895,7 +41970,7 @@ UserView.propTypes = UserShape;
 exports.default = UserView;
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42022,7 +42097,7 @@ Slide.defaultProps = {
 exports.default = Slide;
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42138,7 +42213,7 @@ Slider.defaultProps = {
 exports.default = Slider;
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42216,7 +42291,7 @@ Tab.defaultProps = {
 exports.default = Tab;
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42326,7 +42401,7 @@ Table.propTypes = {
 exports.default = Table;
 
 /***/ }),
-/* 91 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42356,7 +42431,7 @@ var _classnames = __webpack_require__(2);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _Row = __webpack_require__(24);
+var _Row = __webpack_require__(23);
 
 var _Row2 = _interopRequireDefault(_Row);
 
@@ -42488,7 +42563,7 @@ Tabs.propTypes = {
 exports.default = Tabs;
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42528,7 +42603,7 @@ Tag.propTypes = {
 exports.default = Tag;
 
 /***/ }),
-/* 93 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42552,7 +42627,7 @@ var _classnames = __webpack_require__(2);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _Button = __webpack_require__(23);
+var _Button = __webpack_require__(22);
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -42610,66 +42685,6 @@ Toast.propTypes = {
 exports.default = Toast;
 
 /***/ }),
-/* 94 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.SearchBar = undefined;
-
-var _react = __webpack_require__(12);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactMaterialize = __webpack_require__(22);
-
-var _text = __webpack_require__(31);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var SearchBar = exports.SearchBar = function SearchBar(props) {
-  return _react2.default.createElement(
-    _reactMaterialize.Navbar,
-    { fixed: true, className: "search-bar orange darken-2" },
-    _react2.default.createElement(
-      _reactMaterialize.NavItem,
-      { onClick: props.sortMovies },
-      _react2.default.createElement(
-        _reactMaterialize.Icon,
-        { large: true },
-        "sort_by_alpha"
-      )
-    ),
-    _react2.default.createElement("input", { className: "search-input", name: "searchInput", value: props.searchInput, onChange: props.changeHandler,
-      placeholder: props.text.search_movies }),
-    _react2.default.createElement(
-      _reactMaterialize.Button,
-      { className: "search-button", onClick: props.searchMovies },
-      props.text.search
-    ),
-    _react2.default.createElement(
-      "div",
-      { className: "language-select" },
-      _react2.default.createElement(
-        _reactMaterialize.Input,
-        { type: "select", onChange: props.changeLanguage, name: "langId", value: String(props.langId) },
-        _text.languages.map(function (item) {
-          return _react2.default.createElement(
-            "option",
-            { key: item.id, value: item.id },
-            item.langName
-          );
-        })
-      )
-    )
-  );
-};
-
-/***/ }),
 /* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -42685,7 +42700,7 @@ var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactMaterialize = __webpack_require__(22);
+var _reactMaterialize = __webpack_require__(26);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -42697,146 +42712,151 @@ var MoviesList = exports.MoviesList = function MoviesList(props) {
       _reactMaterialize.Collection,
       null,
       props.searchResult.map(function (item, index) {
-        return _react2.default.createElement(
-          _reactMaterialize.CollectionItem,
-          { key: item.id, className: "collection-item" },
-          item.poster_path !== null ? _react2.default.createElement("img", { src: "https://image.tmdb.org/t/p/w185/" + item.poster_path }) : _react2.default.createElement(
-            "div",
-            { className: "error-poster" },
-            props.text.Unable_to_load_poster
-          ),
+        return (
+          //single movie \/
           _react2.default.createElement(
-            "div",
-            { className: "description" },
-            _react2.default.createElement(
-              "h4",
-              null,
-              item.title
+            _reactMaterialize.CollectionItem,
+            { key: item.id, className: "collection-item" },
+            item.poster_path !== null ? _react2.default.createElement("img", { src: "https://image.tmdb.org/t/p/w185/" + item.poster_path }) : _react2.default.createElement(
+              "div",
+              { className: "error-poster" },
+              props.text.Unable_to_load_poster
             ),
             _react2.default.createElement(
-              "h5",
-              null,
-              props.text.Release_date,
-              ": ",
-              item.release_date.split("-").reverse().map(function (dateItem, index) {
-                return index !== 2 ? dateItem + "-" : dateItem + props.text.y;
-              })
-            ),
-            _react2.default.createElement(
-              "h5",
-              null,
-              props.text.Popularity,
-              ": ",
-              item.popularity.toFixed(2)
-            ),
-            _react2.default.createElement(
-              "h5",
-              null,
-              props.text.Rating,
-              ": ",
-              item.vote_average,
-              "/10"
-            ),
-            _react2.default.createElement(
-              "h6",
-              null,
-              props.text.Based_on,
-              " ",
+              "div",
+              { className: "description" },
               _react2.default.createElement(
-                "strong",
+                "h4",
                 null,
-                item.vote_count
-              ),
-              " ",
-              props.text.voices
-            ),
-            _react2.default.createElement(
-              "span",
-              { onClick: function onClick() {
-                  return props.catchMovieDetails(item.id, index);
-                } },
-              props.text.more_details,
-              "\u21B4"
-            ),
-            item.genres !== undefined && _react2.default.createElement(
-              "section",
-              { className: "details" },
-              _react2.default.createElement(
-                "p",
-                { className: "overview" },
-                item.overview
+                item.title
               ),
               _react2.default.createElement(
-                "h6",
+                "h5",
                 null,
-                props.text.Category,
+                props.text.Release_date,
                 ": ",
-                _react2.default.createElement(
-                  "ul",
-                  null,
-                  item.genres.map(function (genre, index) {
-                    return _react2.default.createElement(
-                      "li",
-                      { key: genre.id },
-                      _react2.default.createElement(
-                        "strong",
-                        null,
-                        index === 0 ? genre.name : ", " + genre.name
-                      )
-                    );
-                  })
-                )
+                item.release_date.split("-").reverse().map(function (dateItem, index) {
+                  return index !== 2 ? dateItem + "-" : dateItem + props.text.y;
+                })
               ),
               _react2.default.createElement(
-                "h6",
+                "h5",
                 null,
-                props.text.Production_countries,
+                props.text.Popularity,
                 ": ",
-                _react2.default.createElement(
-                  "ul",
-                  null,
-                  item.production_countries.map(function (country, index) {
-                    return _react2.default.createElement(
-                      "li",
-                      { key: country.iso_3166_1 },
-                      _react2.default.createElement(
-                        "strong",
-                        null,
-                        index === 0 ? country.name : ", " + country.name
-                      )
-                    );
-                  })
-                )
+                item.popularity.toFixed(2)
               ),
               _react2.default.createElement(
-                "h6",
+                "h5",
                 null,
-                props.text.Production_companies,
+                props.text.Rating,
                 ": ",
-                _react2.default.createElement(
-                  "ul",
-                  null,
-                  item.production_companies.map(function (company, index) {
-                    return _react2.default.createElement(
-                      "li",
-                      { key: company.id },
-                      _react2.default.createElement(
-                        "strong",
-                        null,
-                        index === 0 ? company.name : ", " + company.name
-                      )
-                    );
-                  })
-                )
+                item.vote_average,
+                "/10"
               ),
               _react2.default.createElement(
                 "h6",
                 null,
-                "IMDB: ",
+                props.text.Based_on,
+                " ",
                 _react2.default.createElement(
-                  "a",
-                  { href: item.imdb_link },
-                  item.imdb_link.split("//")[1]
+                  "strong",
+                  null,
+                  item.vote_count
+                ),
+                " ",
+                props.text.voices
+              ),
+              _react2.default.createElement(
+                "span",
+                { onClick: function onClick() {
+                    return props.catchMovieDetails(item.id, index);
+                  } },
+                props.text.more_details,
+                "\u21B4"
+              ),
+              item.genres !== undefined &&
+              //more details section \/
+              _react2.default.createElement(
+                "section",
+                { className: "details" },
+                _react2.default.createElement(
+                  "p",
+                  { className: "overview" },
+                  item.overview
+                ),
+                _react2.default.createElement(
+                  "h6",
+                  null,
+                  props.text.Category,
+                  ": ",
+                  _react2.default.createElement(
+                    "ul",
+                    null,
+                    item.genres.map(function (genre, index) {
+                      return _react2.default.createElement(
+                        "li",
+                        { key: genre.id },
+                        _react2.default.createElement(
+                          "strong",
+                          null,
+                          index === 0 ? genre.name : ", " + genre.name
+                        )
+                      );
+                    })
+                  )
+                ),
+                _react2.default.createElement(
+                  "h6",
+                  null,
+                  props.text.Production_countries,
+                  ": ",
+                  _react2.default.createElement(
+                    "ul",
+                    null,
+                    item.production_countries.map(function (country, index) {
+                      return _react2.default.createElement(
+                        "li",
+                        { key: country.iso_3166_1 },
+                        _react2.default.createElement(
+                          "strong",
+                          null,
+                          index === 0 ? country.name : ", " + country.name
+                        )
+                      );
+                    })
+                  )
+                ),
+                _react2.default.createElement(
+                  "h6",
+                  null,
+                  props.text.Production_companies,
+                  ": ",
+                  _react2.default.createElement(
+                    "ul",
+                    null,
+                    item.production_companies.map(function (company, index) {
+                      return _react2.default.createElement(
+                        "li",
+                        { key: company.id },
+                        _react2.default.createElement(
+                          "strong",
+                          null,
+                          index === 0 ? company.name : ", " + company.name
+                        )
+                      );
+                    })
+                  )
+                ),
+                _react2.default.createElement(
+                  "h6",
+                  null,
+                  "IMDB: ",
+                  _react2.default.createElement(
+                    "a",
+                    { href: item.imdb_link },
+                    item.imdb_link.split("//")[1]
+                  )
                 )
               )
             )
@@ -42844,11 +42864,15 @@ var MoviesList = exports.MoviesList = function MoviesList(props) {
         );
       })
     )
-  ) : _react2.default.createElement(
+  ) :
+  //if there is no search results
+  _react2.default.createElement(
     "h1",
     { className: "empty" },
     props.text.No_results
-  ) : _react2.default.createElement(
+  ) :
+  //if there was no search yet
+  _react2.default.createElement(
     "h1",
     { className: "empty" },
     props.text.search_info

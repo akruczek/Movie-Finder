@@ -8,6 +8,7 @@ export const MoviesList =(props)=> {
         {
           props.searchResult.map((item, index) => {
             return (
+              //single movie \/
               <CollectionItem key={item.id} className="collection-item">
                 {item.poster_path !== null ?
                   <img src={"https://image.tmdb.org/t/p/w185/" + item.poster_path} />
@@ -23,7 +24,9 @@ export const MoviesList =(props)=> {
                   <h6>{props.text.Based_on} <strong>{item.vote_count}</strong> {props.text.voices}</h6>
                   <span onClick={() => props.catchMovieDetails(item.id, index)}>{props.text.more_details}&#8628;</span>
                   {item.genres !== undefined && (
+                    //more details section \/
                     <section className="details">
+
                       <p className="overview">{item.overview}</p>
                       <h6>{props.text.Category}: <ul>{item.genres.map((genre, index) =>
                         <li key={genre.id}><strong>{index===0 ? genre.name : `, ${genre.name}`}</strong></li>)}</ul>
@@ -50,8 +53,10 @@ export const MoviesList =(props)=> {
       </Collection>
     </div>
   ) : (
+    //if there is no search results
     <h1 className="empty">{props.text.No_results}</h1>
   ) : (
+    //if there was no search yet
     <h1 className="empty">{props.text.search_info}</h1>
   );
 }

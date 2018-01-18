@@ -2,9 +2,13 @@
   display: flex;
   height: 100px;
   width: 100vw;
-  ul {
+  .hide-on-med-and-down {
     align-items: center;
-    i { font-size: 48px; }
+    display: flex !important;
+    i {
+      @media (min-width: 425px) { font-size: 32px; }  //mobile Large
+      @media (min-width: 768px) { font-size: 48px; }  //tablet+
+    }
     li {
       a {
         font-size: 24px;
@@ -14,10 +18,11 @@
         height: 100px; } }
     .search-input {
       padding-top: 10px;
-      font-size: 24px;
+      @media (min-width: 425px) { font-size: 18px; }  //mobile Large
+      @media (min-width: 768px) { font-size: 24px; }  //tablet+
       font-weight: 600;
-      height: 40px;
-      width: 30%; }
+      width: 30%;
+      height: 40px; }
     .search-button {
       margin-left: 10px;
       margin-bottom: 15px;
@@ -25,12 +30,20 @@
       font-weight: 600; }
     .language-select {
       position: absolute;
-      right: 20px;
+      @media (max-width: 374px) {right: 40px; width: 100px; top: 45px;} //mobile Small
+      @media (min-width: 375px) {right: 75px; width: 100px; top: 45px;} //mobile Medium
+      @media (min-width: 425px) {right: -5px; width: 100px; top: 8px;} //mobile Large
+      @media (min-width: 768px) {right: 60px; width: 100px;}  //tablet
+      @media (min-width: 1024px) {right: 20px;} //laptop, desktop+
       width: 10%;
       padding-top: 15px;
       div { padding-left: 15px; }
       .caret { color: white; left: 0;}
       .select-dropdown {
         border: 0;
-        font-size: 20px;
+        @media (max-width: 767px) { font-size: 16px; }  //mobile
+        @media (min-width: 768px) { font-size: 20px; }  //tablet+
         font-weight: 500; } } } }
+
+#nav-mobile { display: none; }
+.button-collapse { display: none; }

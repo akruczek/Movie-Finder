@@ -1,12 +1,9 @@
 import "../style/main.scss";
 import React from "react";
 import ReactDOM from "react-dom";
-import {Navbar, NavItem} from "react-materialize";
 import {SearchBar} from "./components/SearchBar.jsx";
 import {MoviesList} from "./components/MoviesList.jsx";
 import {languages} from "./variables/text.jsx";
-
-// &api_key=73a3e42b7075df257f789c920cc37996
 
 class Main extends React.Component {
   constructor(props) {
@@ -20,6 +17,7 @@ class Main extends React.Component {
     }
   }
 
+  //GET suitable movies from API
   getMovies =()=> {
     let searchWords = [];
     let searchString = "";
@@ -31,7 +29,7 @@ class Main extends React.Component {
 
     fetch(`https://api.themoviedb.org/3/search/movie?api_key=73a3e42b7075df257f789c920cc37996&query=${searchString}&language=${this.state.text.langCode}`)
     .then(response => {
-      return (response && response.ok) ? response.json() : "Błąd Połączenia";
+      return (response && response.ok) ? response.json() : "connection error";
     })
     .then(data => this.setState({
       searchResult: data.results,
@@ -40,11 +38,13 @@ class Main extends React.Component {
     .catch(error => console.log(error));
   }
 
+  //onClick for SEARCH button
   searchMovies =(event)=> {
     event.preventDefault();
     this.getMovies();
   }
 
+  //onChange for change language select
   changeLanguage =(event)=> {
     event.preventDefault();
     this.setState({
@@ -54,10 +54,11 @@ class Main extends React.Component {
     this.state.searchResult !== null && this.getMovies()
   }
 
+  //GET movie details ONLY AFTER clicking 'more details' span
   catchMovieDetails =(id, index)=> {
     fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=73a3e42b7075df257f789c920cc37996`)
     .then(response => {
-      return (response && response.ok) ? response.json() : "Błąd Połączenia";
+      return (response && response.ok) ? response.json() : "connection error";
     })
     .then(data => {
       let searchResult = this.state.searchResult;
@@ -70,6 +71,7 @@ class Main extends React.Component {
     .catch(error => console.log(error));
   }
 
+  //onClick for sort movies button
   sortMovies =(event)=> {
     event.preventDefault();
     if (this.state.searchResult) {
@@ -86,6 +88,7 @@ class Main extends React.Component {
     }
   }
 
+  //changeHandler for input
   changeHandler =(event)=> this.setState({ [event.target.name]: event.target.value })
 
   render() {
@@ -94,7 +97,6 @@ class Main extends React.Component {
         <SearchBar text={this.state.text} changeLanguage={this.changeLanguage} langId={this.state.langId}
           searchMovies={this.searchMovies} searchInput={this.state.searchInput} changeHandler={this.changeHandler}
           sortMovies={this.sortMovies} />
-
         <MoviesList searchResult={this.state.searchResult} text={this.state.text} catchMovieDetails={this.catchMovieDetails} />
       </div>
     );
